@@ -2,7 +2,9 @@
 
 ## The development on Keith's Website Portfolio
 
-This repo is used to create Keith's Web Portfolio. There will be four main pages inside:
+This repo is used to create Keith's Web Portfolio. I plan to brand myself as a Creative Problem Solver / Designer, specializing in Product Design (UX/UI, Website, Mobile, etc.) yet still showcases my Graphic/Motion Design skills within the portfolio.
+
+There will be four main pages inside:
 
 - Home
 - Works
