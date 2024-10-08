@@ -1,0 +1,25 @@
+@use "fonts";
+
+// Font Family
+$header-font: "Quicklime";
+$body-font: "Poppins", sans-serif;
+
+// Font Size (Mobile First)
+$bodycopy: 10px;
+$headercopy: 24px;
+$caption: 8px;
+$year-caption: 12px;
+$title: 20px;
+
+// Colors
+// Primary
+$k-black: #231f20;
+$white: #ffffff;
+
+// Primary - Accent
+$k-magenta: #ff007a;
+$k-blue: #00a3ff;
+$k-orange: #ff8a00;
+
+// Utility
+$body-color: #464646;
