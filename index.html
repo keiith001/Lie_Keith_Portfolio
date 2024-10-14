@@ -11,39 +11,50 @@
     <h1 class="hidden">Keith Richard Lie's Portfolio Website</h1>
 
     <!-- NAVIGATION -->
-    <header id="main-header" class="grid-con">
+    <header id="main-header" class="full-width-grid-con">
       <h2 class="hidden">Keith's Portfolio Header</h2>
       <!-- Navbar -->
-      <div id="main-nav" class="col-span-full">
+      <div id="main-nav" class="col-span-4">
         <!-- Navigation -->
         <nav>
-          <!-- Logo -->
-          <div id="logo">
+          <!-- Logo Nav -->
+          <div id="logo-nav">
             <a href="index.html"><img src="images/K-Logo/k-logo-black.svg" alt="Keith's Logo"></a>
+
+            <!-- Hamburger Button -->
+            <img src="./images/icons/hamburger-button.svg" alt="Hamburger Button" class="hamburger-btn">
           </div>
 
-          <!-- Page Nav -->
-          <ul id="page-nav">
-            <li><a href="works.html">Works</a></li>
-            <li><a href="about.html">Works</a></li>
-            <li><a href="playground.html">Works</a></li>
-            <li><a href="#contact.html">Works</a></li>
-          </ul>
+          <div class="off-screen">
+            <!-- Logo Off Screen -->
+            <div id="logo-off">
+              <a href="index.html"><img src="images/K-Logo/k-logo-black.svg" class="filter-white" alt="Keith's Logo"></a>
+            </div>
 
-          <ul class="socmed-nav">
-            <li>
-              <a href="https://www.linkedin.com/in/keith-richard-79b312183/" target="_blank"><img src="./images/socmed/linkedin-icon.svg" alt="linkedin logo"></a>
-            </li>
-            <li>
-              <a href="https://www.behance.net/keithrichard12" target="_blank"><img src="./images/socmed/behance-icon.svg" alt="behance logo"></a>
-            </li>
-            <li>
-              <a href="https://github.com/keiith001" target="_blank"><img src="./images/socmed/github-icon.svg" alt="github logo"></a>
-            </li>
-          </ul>
+            <!-- Page Nav -->
+            <ul id="page-nav">
+              <li><a href="works.html">Works</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="playground.html">Playground</a></li>
+              <li><a href="#contact.html">Contact</a></li>
+            </ul>
+
+            <ul class="socmed-nav filter-white">
+              <li>
+                <a href="https://www.linkedin.com/in/keith-richard-79b312183/" target="_blank"><img src="./images/socmed/linkedin-icon.svg" alt="linkedin logo"></a>
+              </li>
+              <li>
+                <a href="https://www.behance.net/keithrichard12" target="_blank"><img src="./images/socmed/behance-icon.svg" alt="behance logo"></a>
+              </li>
+              <li>
+                <a href="https://github.com/keiith001" target="_blank"><img src="./images/socmed/github-icon.svg" alt="github logo"></a>
+              </li>
+            </ul>
+
+            <!-- Close Button -->
+            <img src="./images/icons/close-button-white.svg" alt="Close Button" class="close-btn">
+          </div>
         </nav>
-        
-        <img src="./images/icons/hamburger-button.svg" alt="Hamburger Button">
       </div>
     </header>
 
@@ -241,5 +252,8 @@
         <p>&copy; 2025 All Rights Reserved</p>
       </div>
     </footer>
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
