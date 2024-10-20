@@ -89,11 +89,17 @@ video {
     margin-bottom: 20px;
 }
 
+.video-size {
+    width: 100%;
+    height: 100%;
+}
+
 // Decor Image
 #hero-decor {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
     width: 100%;
 
     img {
@@ -103,11 +109,209 @@ video {
 
 .decor {
     z-index: v.$decor-post;
-    position: absolute;
 }
 
 // Featured Work Section
 #feat-work-sect {
     margin: 20px auto;
+}
+
+@media screen and (min-width: 768px) {
+    // Hero Banner
+    #hero-headline {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        color: v.$k-black;
+
+        p {
+            margin: -5px 0;
+        }
+
+        .opening-caption {
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        #creative-copy {
+            font-size: 64px;
+            font-weight: 300;
+        }
+
+        #problem-copy {
+            font-family: v.$header-font;
+            font-size: 72px;
+            font-weight: 800;
+        }
+
+        #solver-copy {
+            font-family: v.$header-font;
+            font-size: 72px;
+            font-weight: 800;
+            margin-top: 2px;
+        }
+    }
+
+    // Skills
+    #skill-showcase {
+        margin-top: 10px;
+        padding-left: 0;
+        padding-right: 0;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: center;
+        }    
+
+        li {
+            margin: 4px;
+            font-size: v.$m-bodycopy;
+            color: v.$body-color;
+        }
+    }
+
+    // Bio
+    #hero-bio {
+        padding: 10px 20px 10px 20px;
+        display: block;
+        color: v.$body-color;
+        font-size: v.$m-bodycopy;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    // Decor Image
+    #hero-decor {
+        width: 60%;
+        right: 0;
+
+        img {
+            margin: 20px auto;
+            height: 300px;
+        }
+    }
+
+    .decor {
+        z-index: v.$decor-post;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    // Hero Banner
+    #hero-headline {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        color: v.$k-black;
+
+        p {
+            margin: -5px 0;
+        }
+
+        .opening-caption {
+            font-size: 32px;
+            font-weight: 300;
+        }
+
+        #creative-copy {
+            font-size: 114px;
+            font-weight: 300;
+        }
+
+        #problem-copy {
+            font-family: v.$header-font;
+            font-size: 128px;
+            font-weight: 800;
+        }
+
+        #solver-copy {
+            font-family: v.$header-font;
+            font-size: 128px;
+            font-weight: 800;
+            margin-top: 2px;
+        }
+    }
+
+    // Skills
+    #skill-showcase {
+        margin-top: 10px;
+        padding-left: 0;
+        padding-right: 0;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: center;
+        }    
+
+        li {
+            margin: 6px;
+            font-size: v.$l-bodycopy;
+            color: v.$body-color;
+        }
+    }
+
+    // Bio
+    #hero-bio {
+        padding: 14px 24px 14px 24px;
+        display: block;
+        color: v.$body-color;
+        font-size: v.$l-bodycopy;
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    // Decor Image
+    #hero-decor {
+        width: 60%;
+        right: 0;
+
+        img {
+            margin: 60px auto;
+            height: 450px;
+        }
+    }
+
+    .decor {
+        z-index: v.$decor-post;
+    }
+
+    // Video
+    video {
+        border-radius: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .video-size {
+        width: 100%;
+        height: 100%;
+    }
+
+
 }
 
