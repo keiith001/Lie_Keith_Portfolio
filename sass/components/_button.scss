@@ -1,0 +1,72 @@
+@use "../abstracts/variables" as v;
+
+.primary-btn {
+    padding: 8px 20px 8px 20px;
+    border: solid v.$k-black .5px;
+    background-color: v.$k-black;
+    color: v.$white;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        margin-left: 10px;
+    }
+}
+
+.secondary-btn {
+    padding: 8px 16px 8px 16px;
+    border: solid v.$k-black .5px;
+    color: v.$k-black;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+    backdrop-filter: blur(10px);
+
+    span {
+        margin-left: 10px;
+    }
+}
+
+.secondary-btn-white {
+    padding: 8px 16px 8px 16px;
+    border: solid v.$white .5px;
+    color: v.$white;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+    backdrop-filter: blur(10px);
+
+    span {
+        margin-left: 10px;
+    }
+}
+
+.email-contact-btn {
+    padding: 10px 16px 10px 16px;
+    border: solid v.$k-black .5px;
+    color: v.$k-black;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+    backdrop-filter: blur(10px);
+
+    img {
+        margin-left: 10px;
+    }
+}

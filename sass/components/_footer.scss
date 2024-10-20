@@ -1,0 +1,300 @@
+@use "../abstracts/variables" as v;
+
+// Contact by Email Footer
+#contact {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+
+    .contact-headline {
+        font-size: 32px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            font-family: v.$header-font;
+            font-weight: 800;
+        }
+    }
+
+    // Socmed Part
+    #contact-socmed {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+
+        p {
+            font-size: 12px;
+            color: v.$body-color;
+            margin-top: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            li {
+                list-style: none;
+                margin: 6px 8px;
+            }
+        }
+    }
+
+    // Contact Form Part
+    // Contact Text
+    #contact-text {
+        font-family: v.$header-font;
+        font-size: v.$headercopy;
+        font-weight: 800;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            margin-bottom: 5px;
+        }
+    }
+
+    // Slider Text *Need Fix
+    @keyframes slider {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%)
+        }
+    }
+
+    .sliding-text {
+        overflow: hidden;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        position: relative;
+
+        font-family: v.$header-font;
+        font-size: v.$headercopy;
+        font-weight: 800;
+    }
+
+    .sliding-text:before,
+    .sliding-text:after {
+        position: absolute;
+        top: 0;
+        width: 100px;
+        height: 50px;
+        content: "";
+        z-index: 10;
+    }
+
+    .fade {
+        position: absolute;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        content: "";
+        z-index: 10;
+        right: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+    }
+
+    .sliding-text:before {
+        left: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+    }
+
+    .sliding-text:after {
+        right: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+    }
+
+    .sliding-text:hover .title-slide {
+        animation-play-state: paused;
+    }
+
+    .title-slide {
+        display: inline-block;
+        animation: 20s slider infinite linear;
+    }
+}
+
+.opening-msg {
+    margin: 10px auto;
+    font-family: v.$body-font;
+    font-size: v.$bodycopy;
+    font-weight: 400;
+    color: v.$body-color;
+}
+
+#contact-form {
+    margin: 0 auto;
+    width: 100%;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    input {
+        font-family: v.$body-font;
+        font-size: v.$bodycopy;
+        font-weight: 400;
+        margin-bottom: 10px;
+        padding: 4px 8px 4px 8px;
+        border-radius: 6px;
+        border: solid v.$body-color .5px;
+    }
+
+    textarea {
+        font-family: v.$body-font;
+        font-size: v.$bodycopy;
+        font-weight: 400;
+        margin-bottom: 10px;
+        padding: 4px 8px 40px 8px;
+        border-radius: 6px;
+        border: none;
+        background-color: #F8F8F8;
+        color: #d8d8d8;
+    }
+
+    .submit-btn {
+        padding: 8px 8px 8px 8px;
+        font-size: 14px;
+    }
+}
+
+// Footer
+footer {
+    background-color: v.$k-black;
+    color: v.$white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+
+    .back-to-top {
+        margin: 10px auto;
+    }
+
+    #copyright-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+
+        p {
+            font-size: v.$bodycopy;
+            text-align: left;
+        }
+
+        #copyright {
+            text-align: right;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #contact {
+        #contact-text {
+            font-family: v.$header-font;
+            font-size: v.$m-headercopy;
+            font-weight: 800;
+            margin-bottom: 10px;
+    
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            #lets {
+                width: 15%;
+            }
+        }
+
+        // Slider Text
+        .sliding-text {
+            overflow: hidden;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            position: relative;
+    
+            font-family: v.$header-font;
+            font-size: v.$m-headercopy;
+            font-weight: 800;
+            margin-bottom: 20px;
+            width: 85%;
+        }
+    }
+
+    .opening-msg {
+        margin-top: 0px;
+        font-size: v.$m-bodycopy;
+    }
+
+    #contact-form {
+        margin: 0 auto;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        input {
+            font-family: v.$body-font;
+            font-size: v.$m-bodycopy;
+            margin-bottom: 12px;
+            padding: 8px 12px 8px 12px;
+            border-radius: 6px;
+            border: solid v.$body-color .5px;
+        }
+    
+        textarea {
+            font-family: v.$body-font;
+            font-size: v.$m-bodycopy;
+            font-weight: 400;
+            margin-bottom: 12px;
+            padding: 8px 12px 60px 12px;
+        }
+    }
+    
+    // Footer
+    footer {
+        background-color: v.$k-black;
+        color: v.$white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    
+        .back-to-top {
+            margin: 0 auto;
+        }
+    
+        #copyright-footer {
+            margin-top: -60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+    
+            p {
+                font-size: v.$bodycopy;
+                text-align: left;
+            }
+    
+            #copyright {
+                text-align: right;
+            }
+        }
+    }
+}

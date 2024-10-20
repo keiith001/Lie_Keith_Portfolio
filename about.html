@@ -36,7 +36,7 @@
               <li><a href="works.html">Works</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="playground.html">Playground</a></li>
-              <li><a href="#contact.html">Contact</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
 
             <ul class="socmed-nav filter-white">
@@ -193,16 +193,16 @@
         <h2 class="hidden">Contact Me</h2>
 
         <!-- Email Button -->
-        <a href="mailto:kith.richrd@gmail.com?subject=Hey%20Fella&body=I'm%20..." class="col-span-4 secondary-btn">kith.richrd@gmail.com <span><img src="./images/icons/mail-icon-black.svg" alt="Main Icon"></span></a>
+        <a href="mailto:kith.richrd@gmail.com?subject=Hey%20Fella&body=I'm%20..." class="col-span-4 m-col-start-4 m-col-span-6 email-contact-btn">kith.richrd@gmail.com <img src="./images/icons/mail-icon-black.svg" alt="Mail Icon"></a>
 
         <!-- Copy -->
-        <p class="col-span-4">Let's Make Ideas
+        <p class="col-span-4 m-col-start-4 m-col-span-6 contact-headline">Let's Make Ideas
           <span>FEASIBLE</span>
           <span>TOGETHER</span>
         </p>
 
         <!-- Socmed -->
-        <div id="contact-socmed" class="col-span-4">
+        <div id="contact-socmed" class="col-span-4 m-col-start-4 m-col-span-6">
           <p>Can also find me here</p>
           <ul class="socmed-nav">
             <li>
@@ -217,23 +217,40 @@
           </ul>
         </div>
 
-        <div class="line-seperator col-span-4"></div>
-
-        <div id="contact-text" class="col-span-4">
+        <div class="line-seperator col-span-4 m-col-span-12"></div>
+        
+        <div id="contact-text" class="col-span-4 m-col-start-1 m-col-span-12">
           <h3 class="hidden">Leave a Message</h3>
-          <p class="msg-title">Let's be</p>
+          <div id="lets">
+            <p>Let's be</p>
+          </div>
+          
           <!-- Sliding Text -->
-          <p class="msg-title"> / Partners / Friends / Bros / Playmate / Partners / Friends / Bros / Playmate</p>
+          <div class="sliding-text">
+            <div class="title-slide">
+              <p>/ Partners / Friends / Bros / Partners / Friends / Bros</p>
+            </div>
 
-          <p>Hey I really like to connect with people! I would love to know you better. Maybe we might have the same interest in movies. Tell me what is your best movie ever :D</p>
+            <div class="title-slide">
+              <p> / Partners / Friends / Bros / Partners / Friends / Bros</p>
+            </div>
+
+            <div class="title-slide">
+              <p> / Partners / Friends / Bros / Partners / Friends / Bros</p>
+            </div>
+          </div>  
         </div>
 
-        <div id="contact-form" class="col-span-4">
+        <div class="col-span-4 m-col-start-1 m-col-span-6">
+          <p class="opening-msg">Hey I really like to connect with people! I would love to know you better. Maybe we might have the same interest in movies. Tell me what is your best movie ever :D</p>
+        </div>
+
+        <div id="contact-form" class="col-span-4 m-col-start-7 m-col-span-6">
           <form action="#" method="post" enctype="text/plain">
             <input name="fullName" type="text" placeholder="Your Name">
             <input name="contactInfo" type="text" placeholder="Your Email/Phone Number">
             <textarea name="msg" placeholder="Drop your thoughts / movie recommendation / interests / discord username / steam ID / anything on your mind!"></textarea>
-            <input name="submit" type="submit" value="Send">
+            <input name="submit" type="submit" value="Send" class="primary-btn submit-btn">
           </form>
         </div>
       </section>
@@ -241,11 +258,13 @@
 
     <!-- FOOTER -->
     <footer id="footer" class="grid-con">
-      <a href="#hero-banner" class="secondary-btn-white col-span-4">Back to Top <span><img src="./images/icons/arrow-top-white.svg" alt="Arrow Icon"></span></a>
-  
-      <div id="copyright-footer" class="col-span-4">
+      <div class="col-span-4 m-col-span-12 back-to-top">
+        <a href="#hero-banner" class="secondary-btn-white">Back to Top <span><img src="./images/icons/arrow-top-white.svg" alt="Arrow Icon"></span></a>
+      </div>
+
+      <div id="copyright-footer" class="col-span-4 m-col-span-12">
         <p>Design and Developed by Keith</p>
-        <p>&copy; 2025 All Rights Reserved</p>
+        <p id="copyright">&copy; 2025 All Rights Reserved</p>
       </div>
     </footer>
   

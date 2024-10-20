@@ -1,0 +1,64 @@
+@use "../abstracts/variables" as v;
+
+.header-section {
+    font-family: v.$header-font;
+    font-size: v.$headercopy;
+    color: v.$k-black;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+// Featured Work Thumbnail Tpography
+.work-caption-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.case-no {
+    font-size: v.$caption;
+}
+
+.year {
+    font-size: v.$year-caption;
+    font-weight: 600;
+}
+
+.thumb-work-title {
+    font-size: v.$title;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    .header-section {
+        font-family: v.$header-font;
+        font-size: v.$m-headercopy;
+        color: v.$k-black;
+        font-weight: 800;
+        margin-top: 20px;
+    }
+
+    .work-caption-cont {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    
+    .case-no {
+        font-size: v.$m-caption;
+    }
+    
+    .year {
+        font-size: v.$m-year-caption;
+        font-weight: 600;
+    }
+    
+    .thumb-work-title {
+        font-size: v.$m-title;
+        font-weight: 700;
+    }
+}

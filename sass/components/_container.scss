@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as v;
+
+.container-1 {
+    padding: 4px 8px 4px 8px;
+    border: solid v.$k-black .5px;
+    color: v.$k-black;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+// Featured Work Thumbnail Tags
+.tag-lists {
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    
+
+    li {
+        margin-top: 18px;
+        margin-right: 12px;
+        font-size: v.$bodycopy;
+        color: v.$body-color;
+        list-style: none;
+    }
+}
+
+// More Works Button
+.more-work-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
