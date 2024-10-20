@@ -14,12 +14,11 @@
     <header id="main-header" class="full-width-grid-con">
       <h2 class="hidden">Keith's Portfolio Header</h2>
       <!-- Navbar -->
-      <div id="main-nav" class="col-span-4">
         <!-- Navigation -->
-        <nav>
+        <nav id="main-nav">
           <!-- Logo Nav -->
           <div id="logo-nav">
-            <a href="index.html"><img src="images/K-Logo/k-logo-black.svg" alt="Keith's Logo"></a>
+            <a href="index.html"><img src="images/K-Logo/k-logo-black.svg" alt="Keith's Logo" class="col-span-2"></a>
 
             <!-- Hamburger Button -->
             <img src="./images/icons/hamburger-button.svg" alt="Hamburger Button" class="hamburger-btn">
@@ -36,10 +35,10 @@
               <li><a href="works.html">Works</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="playground.html">Playground</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="secondary-btn"><a href="#contact">Contact</a></li>
             </ul>
 
-            <ul class="socmed-nav filter-white">
+            <ul class="socmed-nav filter-white m-col-start-10">
               <li>
                 <a href="https://www.linkedin.com/in/keith-richard-79b312183/" target="_blank"><img src="./images/socmed/linkedin-icon.svg" alt="linkedin logo"></a>
               </li>
@@ -55,13 +54,12 @@
             <img src="./images/icons/close-button-white.svg" alt="Close Button" class="close-btn">
           </div>
         </nav>
-      </div>
     </header>
 
     <!-- MAIN CONTENT -->
     <main>
       <!-- Page Banner Section -->
-      <section id="works-banner" class="grid-con">
+      <section id="about-banner" class="grid-con">
         <h2 class="hidden">About Keith</h2>
 
         <!-- Headline -->
@@ -196,7 +194,7 @@
         <a href="mailto:kith.richrd@gmail.com?subject=Hey%20Fella&body=I'm%20..." class="col-span-4 m-col-start-4 m-col-span-6 email-contact-btn">kith.richrd@gmail.com <img src="./images/icons/mail-icon-black.svg" alt="Mail Icon"></a>
 
         <!-- Copy -->
-        <p class="col-span-4 m-col-start-4 m-col-span-6 contact-headline">Let's Make Ideas
+        <p class="col-span-4 m-col-span-12 l-col-span-12 contact-headline">Let's Make Ideas
           <span>FEASIBLE</span>
           <span>TOGETHER</span>
         </p>
@@ -228,16 +226,17 @@
           <!-- Sliding Text -->
           <div class="sliding-text">
             <div class="title-slide">
-              <p>/ Partners / Friends / Bros / Partners / Friends / Bros</p>
+              <p>/ <span class="mgnt">Partners</span> / <span class="blu">Friends</span> / <span class="orng">Bros</span> / <span class="mgnt">Partners</span> / <span class="blu">Friends</span> / <span class="gry">Buddies</span> / <span class="orng">Bros</span></p>
             </div>
 
             <div class="title-slide">
-              <p> / Partners / Friends / Bros / Partners / Friends / Bros</p>
+              <p>/ <span class="mgnt">Partners</span> / <span class="blu">Friends</span> / <span class="orng">Bros</span> / <span class="mgnt">Partners</span> / <span class="blu">Friends</span> / <span class="gry">Buddies</span> / <span class="orng">Bros</span></p>
             </div>
 
             <div class="title-slide">
-              <p> / Partners / Friends / Bros / Partners / Friends / Bros</p>
+              <p>/ <span class="mgnt">Partners</span> / <span class="blu">Friends</span> / <span class="orng">Bros</span> / <span class="mgnt">Partners</span> / <span class="blu">Friends</span> / <span class="gry">Buddies</span> / <span class="orng">Bros</span></p>
             </div>
+
           </div>  
         </div>
 
@@ -250,16 +249,16 @@
             <input name="fullName" type="text" placeholder="Your Name">
             <input name="contactInfo" type="text" placeholder="Your Email/Phone Number">
             <textarea name="msg" placeholder="Drop your thoughts / movie recommendation / interests / discord username / steam ID / anything on your mind!"></textarea>
-            <input name="submit" type="submit" value="Send" class="primary-btn submit-btn">
+            <input name="submit" type="submit" value="Send" class="submit-btn">
           </form>
         </div>
       </section>
     </main>
 
     <!-- FOOTER -->
-    <footer id="footer" class="grid-con">
-      <div class="col-span-4 m-col-span-12 back-to-top">
-        <a href="#hero-banner" class="secondary-btn-white">Back to Top <span><img src="./images/icons/arrow-top-white.svg" alt="Arrow Icon"></span></a>
+    <footer id="footer" class="full-width-grid-con">
+      <div class="back-to-top col-span-2">
+        <a href="#about-banner" class="secondary-btn-white">Back to Top <span><img src="./images/icons/arrow-top-white.svg" alt="Arrow Icon"></span></a>
       </div>
 
       <div id="copyright-footer" class="col-span-4 m-col-span-12">

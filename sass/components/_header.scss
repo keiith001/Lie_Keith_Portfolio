@@ -124,10 +124,10 @@
         box-shadow: none;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: end;
         font-family: v.$body-font;
         font-size: 12px;
-        width: 80%;
+        width: 90%;
         text-align: center;
         top: 0;
         right: 0;
@@ -140,6 +140,7 @@
         ul {
             list-style: none;
             display: flex;
+            align-items: center;
             padding: 0;
             margin: 0;
         }
@@ -154,19 +155,7 @@
         }
     
         .socmed-nav {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: row;
-            filter: none;
-    
-            li {
-                margin: 0 10px;
-            }
-    
-            li a img {
-                height: 24px;
-            }
+            display: none;
         }
     
         .close-btn {
@@ -183,14 +172,12 @@
 
     #logo-nav {
         display: block;
-        flex-direction: row;
-        justify-content: space-between;
         padding: 16px;
-        width: 10%;
+        width: 20%;
         position: fixed;
 
         a {
-            height: 50px;
+            height: 60px;
         }
     }
 
@@ -202,7 +189,7 @@
         box-shadow: none;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: end;
         font-family: v.$body-font;
         font-size: v.$title;
         width: 80%;
@@ -232,19 +219,7 @@
         }
     
         .socmed-nav {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: row;
-            filter: none;
-    
-            li {
-                margin: 0 10px;
-            }
-    
-            li a img {
-                height: 24px;
-            }
+            display: none;
         }
     
         .close-btn {

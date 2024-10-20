@@ -1,5 +1,22 @@
 @use "../abstracts/variables" as v;
 
+// Font Color
+.mgnt {
+    color: v.$k-magenta;
+}
+
+.blu {
+    color: v.$k-blue;
+}
+
+.orng {
+    color: v.$k-orange;
+}
+
+.gry {
+    color: v.$grey;
+}
+
 .header-section {
     font-family: v.$header-font;
     font-size: v.$headercopy;
@@ -59,6 +76,38 @@
     
     .thumb-work-title {
         font-size: v.$m-title;
+        font-weight: 700;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header-section {
+        font-family: v.$header-font;
+        font-size: v.$l-headercopy;
+        color: v.$k-black;
+        font-weight: 800;
+        margin-top: 20px;
+    }
+
+    .work-caption-cont {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    
+    .case-no {
+        font-size: v.$l-caption;
+    }
+    
+    .year {
+        font-size: v.$l-year-caption;
+        font-weight: 600;
+    }
+    
+    .thumb-work-title {
+        font-size: v.$l-title;
         font-weight: 700;
     }
 }
