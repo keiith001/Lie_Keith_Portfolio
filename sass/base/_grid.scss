@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as v;
+
 // CSS Grid
 
 /* ---General rules - scales images, videos to size of container--- */
@@ -29,7 +31,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+ul {
   margin: 0px;
   padding: 0px;
 }
@@ -48,6 +51,12 @@ h5 {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.line-seperator {
+  border-top: .5px solid v.$body-color;
+  width: 100%;
+  margin: 40px auto;
 }
 
 /* ---Mobile Library Grid Styles--- */

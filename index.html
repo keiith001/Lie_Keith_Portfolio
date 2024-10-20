@@ -14,12 +14,11 @@
     <header id="main-header" class="full-width-grid-con">
       <h2 class="hidden">Keith's Portfolio Header</h2>
       <!-- Navbar -->
-      <div id="main-nav" class="col-span-4">
         <!-- Navigation -->
-        <nav>
+        <nav id="main-nav">
           <!-- Logo Nav -->
           <div id="logo-nav">
-            <a href="index.html"><img src="images/K-Logo/k-logo-black.svg" alt="Keith's Logo"></a>
+            <a href="index.html"><img src="images/K-Logo/k-logo-black.svg" alt="Keith's Logo" class="col-span-2"></a>
 
             <!-- Hamburger Button -->
             <img src="./images/icons/hamburger-button.svg" alt="Hamburger Button" class="hamburger-btn">
@@ -36,10 +35,10 @@
               <li><a href="works.html">Works</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="playground.html">Playground</a></li>
-              <li><a href="#contact.html">Contact</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <ul class="socmed-nav filter-white">
+            <ul class="socmed-nav filter-white m-col-start-10">
               <li>
                 <a href="https://www.linkedin.com/in/keith-richard-79b312183/" target="_blank"><img src="./images/socmed/linkedin-icon.svg" alt="linkedin logo"></a>
               </li>
@@ -55,7 +54,6 @@
             <img src="./images/icons/close-button-white.svg" alt="Close Button" class="close-btn">
           </div>
         </nav>
-      </div>
     </header>
 
     <!-- MAIN CONTENT -->
@@ -64,15 +62,20 @@
       <section id="hero-banner" class="grid-con">
         <h2 class="hidden">Keith's Portfolio Hero Section</h2>
         <!-- Headline -->
-        <div id="hero-headline" class="col-span-4">
+        <div id="hero-headline" class="col-span-4 m-col-start-1 m-col-span-9">
           <p class="opening-caption">Hey! I'm a</p>
-          <p id="creative-copy">Creative</p>
-          <p id="problem-copy">Problem</p>
-          <p id="solver-copy">Solver</p>
+          <p id="creative-copy">CREATIVE</p>
+          <p id="problem-copy">PROBLEM</p>
+          <p id="solver-copy">SOLVER</p>
+        </div>
+
+        <!-- Decoration -->
+        <div id="hero-decor" class="decor">
+          <img src="./images/decorations/k-logo-3d.png" alt="K Logo 3D Image">
         </div>
 
         <!-- Skill Showcase -->
-        <div id="skill-showcase" class="col-span-4">
+        <div id="skill-showcase" class="col-span-4 m-col-start-1 m-col-span-8">
           <ul id="skill-list">
             <li class="container-1">Print</li>
             <li class="container-1">UX/UI</li>
@@ -84,10 +87,10 @@
         </div>      
 
         <!-- Short Bio -->
-        <p id="hero-bio" class="col-span-4">Experienced in tailoring product concepts/outputs based on problems within the scope of <span>Websites, Mobile Apps, Digital Media Designs, Printed Designs</span>, and many more. Helping clients achieve their goals is always on my dictionary. Look up my works to see if my dictionary is still up to date.</p>
+        <p id="hero-bio" class="col-span-4 m-col-start-1 m-col-span-12 container-1">Experienced in tailoring product concepts/outputs based on problems within the scope of <span>Websites, Mobile Apps, Digital Media Designs, Printed Designs</span>, and many more. Helping clients achieve their goals is always on my dictionary. Look up my works to see if my dictionary is still up to date.</p>
 
         <!-- Video -->
-        <video controls preload="metadata" poster="./images/placeholder/video-poster-placeholder.jpg" class="col-span-4">
+        <video controls preload="metadata" poster="./images/placeholder/video-poster-placeholder.jpg" class="col-span-4 m-col-start-1 m-col-span-12">
           <source src="./video/video-placeholder.mp4" type="video/mp4">
           <source src="./video/video-placeholder.webm" type="video/webm">
           <p>Ooops, something went wrong. You may be using an oudated browser or have javascript disabled.</p>
@@ -95,11 +98,11 @@
       </section>
 
       <!-- Featured Works (Dynamic)-->
-      <section class="grid-con">
-        <h2 class="header-section">Featured Works</h2>
+      <section id="feat-work-sect" class="grid-con">
+        <h2 class="header-section col-span-4 m-col-start-1 m-col-span-12">Featured Works</h2>
 
         <!-- Work #1 -->
-        <div class="work-card col-span-4">
+        <div class="work-card col-span-4 m-col-span-full">
           <h3 class="hidden">Work 1</h3>
           <!-- Thumbnail -->
           <img src="./images/projects/thumbnail/sqzit-thumbnail.jpg" alt="SQZIT Project Thumbnail">
@@ -112,20 +115,22 @@
 
           <p class="thumb-work-title">SQZIT</p>
 
-          <!-- Tags -->
-          <ul class="tag-lists">
-            <li>UX/UI</li>
-            <li>Branding</li>
-            <li>Graphic</li>
-            <li>Website</li>
-          </ul>
+          <div class="feat-wc-footer">
+            <!-- Tags -->
+            <ul class="tag-lists">
+              <li>UX/UI</li>
+              <li>3D</li>
+              <li>Graphic</li>
+              <li>Website</li>
+            </ul>
 
-          <!-- Learn More Button -->
-          <a href="#">Learn More <span><img src="./images/icons/arrow-right.svg" alt="Arrow Icon"></span></a>
+            <!-- Learn More Button -->
+            <a href="#" class="secondary-btn">Learn More <span><img src="./images/icons/arrow-right.svg" alt="Arrow Icon"></span></a>
+          </div>
         </div>
 
         <!-- Work #2 -->
-        <div class="work-card col-span-4">
+        <div class="work-card col-span-4 m-col-start-1 m-col-span-6">
           <h3 class="hidden">Work 2</h3>
           <!-- Thumbnail -->
           <img src="./images/projects/thumbnail/eternity-thumbnail.jpg" alt="Eternity Project Thumbnail">
@@ -138,20 +143,22 @@
 
           <p class="thumb-work-title">Eternity</p>
 
-          <!-- Tags -->
-          <ul class="tag-lists">
-            <li>UX/UI</li>
-            <li>3D</li>
-            <li>Graphic</li>
-            <li>Website</li>
-          </ul>
+          <div class="wc-footer">
+            <!-- Tags -->
+            <ul class="tag-lists">
+              <li>UX/UI</li>
+              <li>3D</li>
+              <li>Graphic</li>
+              <li>Website</li>
+            </ul>
 
-          <!-- Learn More Button -->
-          <a href="#">Learn More <span><img src="./images/icons/arrow-right.svg" alt="Arrow Icon"></span></a>
+            <!-- Learn More Button -->
+            <a href="#" class="secondary-btn">Learn More <span><img src="./images/icons/arrow-right.svg" alt="Arrow Icon"></span></a>
+          </div>
         </div>
 
         <!-- Work #3 -->
-        <div class="work-card col-span-4">
+        <div class="work-card col-span-4 m-col-start-7 m-col-span-6">
           <h3 class="hidden">Work 3</h3>
           <!-- Thumbnail -->
           <img src="./images/projects/thumbnail/mot-thumbnail.jpg" alt="Manager of Time Project Thumbnail">
@@ -164,19 +171,23 @@
 
           <p class="thumb-work-title">Manager of Time</p>
 
-          <!-- Tags -->
-          <ul class="tag-lists">
-            <li>UX/UI</li>
-            <li>Branding</li>
-            <li>Graphic</li>
-            <li>Mobile App</li>
-          </ul>
+          <div class="wc-footer">
+            <!-- Tags -->
+            <ul class="tag-lists">
+              <li>UX/UI</li>
+              <li>3D</li>
+              <li>Graphic</li>
+              <li>Website</li>
+            </ul>
 
-          <!-- Learn More Button -->
-          <a href="#">Learn More <span><img src="./images/icons/arrow-right.svg" alt="Arrow Icon"></span></a>
+            <!-- Learn More Button -->
+            <a href="#" class="secondary-btn">Learn More <span><img src="./images/icons/arrow-right.svg" alt="Arrow Icon"></span></a>
+          </div>
         </div>
 
-        <a href="works.html" class="primary-btn col-span-4">More Works <span><img src="./images/icons/arrow-right-white.svg" alt="Arrow Icon"></span></a>
+        <div class="more-work-btn col-span-4 m-col-span-12">
+          <a href="works.html" class="primary-btn">More Works <span><img src="./images/icons/arrow-right-white.svg" alt="Arrow Icon"></span></a>
+        </div>
       </section>
 
       <!-- THIS SECTION WILL BE ON EVERY PAGE -->
@@ -185,16 +196,16 @@
         <h2 class="hidden">Contact Me</h2>
 
         <!-- Email Button -->
-        <a href="mailto:kith.richrd@gmail.com?subject=Hey%20Fella&body=I'm%20..." class="col-span-4 secondary-btn">kith.richrd@gmail.com <span><img src="./images/icons/mail-icon-black.svg" alt="Main Icon"></span></a>
+        <a href="mailto:kith.richrd@gmail.com?subject=Hey%20Fella&body=I'm%20..." class="col-span-4 m-col-start-4 m-col-span-6 email-contact-btn">kith.richrd@gmail.com <img src="./images/icons/mail-icon-black.svg" alt="Mail Icon"></a>
 
         <!-- Copy -->
-        <p class="col-span-4">Let's Make Ideas
+        <p class="col-span-4 m-col-start-4 m-col-span-6 contact-headline">Let's Make Ideas
           <span>FEASIBLE</span>
           <span>TOGETHER</span>
         </p>
 
         <!-- Socmed -->
-        <div id="contact-socmed" class="col-span-4">
+        <div id="contact-socmed" class="col-span-4 m-col-start-4 m-col-span-6">
           <p>Can also find me here</p>
           <ul class="socmed-nav">
             <li>
@@ -209,23 +220,40 @@
           </ul>
         </div>
 
-        <div class="line-seperator col-span-4"></div>
-
-        <div id="contact-text" class="col-span-4">
+        <div class="line-seperator col-span-4 m-col-span-12"></div>
+        
+        <div id="contact-text" class="col-span-4 m-col-start-1 m-col-span-12">
           <h3 class="hidden">Leave a Message</h3>
-          <p class="msg-title">Let's be</p>
+          <div id="lets">
+            <p>Let's be</p>
+          </div>
+          
           <!-- Sliding Text -->
-          <p class="msg-title"> / Partners / Friends / Bros / Playmate / Partners / Friends / Bros / Playmate</p>
+          <div class="sliding-text">
+            <div class="title-slide">
+              <p>/ Partners / Friends / Bros / Partners / Friends / Bros</p>
+            </div>
 
-          <p>Hey I really like to connect with people! I would love to know you better. Maybe we might have the same interest in movies. Tell me what is your best movie ever :D</p>
+            <div class="title-slide">
+              <p> / Partners / Friends / Bros / Partners / Friends / Bros</p>
+            </div>
+
+            <div class="title-slide">
+              <p> / Partners / Friends / Bros / Partners / Friends / Bros</p>
+            </div>
+          </div>  
         </div>
 
-        <div id="contact-form" class="col-span-4">
+        <div class="col-span-4 m-col-start-1 m-col-span-6">
+          <p class="opening-msg">Hey I really like to connect with people! I would love to know you better. Maybe we might have the same interest in movies. Tell me what is your best movie ever :D</p>
+        </div>
+
+        <div id="contact-form" class="col-span-4 m-col-start-7 m-col-span-6">
           <form action="#" method="post" enctype="text/plain">
             <input name="fullName" type="text" placeholder="Your Name">
             <input name="contactInfo" type="text" placeholder="Your Email/Phone Number">
             <textarea name="msg" placeholder="Drop your thoughts / movie recommendation / interests / discord username / steam ID / anything on your mind!"></textarea>
-            <input name="submit" type="submit" value="Send">
+            <input name="submit" type="submit" value="Send" class="primary-btn submit-btn">
           </form>
         </div>
       </section>
@@ -233,11 +261,13 @@
 
     <!-- FOOTER -->
     <footer id="footer" class="grid-con">
-      <a href="#hero-banner" class="secondary-btn-white col-span-4">Back to Top <span><img src="./images/icons/arrow-top-white.svg" alt="Arrow Icon"></span></a>
+      <div class="col-span-4 m-col-span-12 back-to-top">
+        <a href="#hero-banner" class="secondary-btn-white">Back to Top <span><img src="./images/icons/arrow-top-white.svg" alt="Arrow Icon"></span></a>
+      </div>
 
-      <div id="copyright-footer" class="col-span-4">
+      <div id="copyright-footer" class="col-span-4 m-col-span-12">
         <p>Design and Developed by Keith</p>
-        <p>&copy; 2025 All Rights Reserved</p>
+        <p id="copyright">&copy; 2025 All Rights Reserved</p>
       </div>
     </footer>
 

@@ -1,0 +1,24 @@
+@use "../abstracts/variables" as v;
+
+.work-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 15px auto;
+
+    p {
+        display: flex;
+        color: v.$bodycopy;
+    }
+
+    .feat-wc-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wc-footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

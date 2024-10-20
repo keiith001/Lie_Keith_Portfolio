@@ -1,25 +1,31 @@
 @use "../abstracts/variables" as v;
 
-
 .filter-white {
     filter: brightness(0) invert(1);
 }
 
 #logo-nav {
+    z-index: 20;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 16px;
     width: 100%;
     position: fixed;
+    top: 0;
 
-    a {
-        height: 50px;
+    a img {
+        height: 36px;
+    }
+
+    .hamburger-btn {
+        height: 20px;
     }
 }
 
 .off-screen {
-    z-index: 50;
+    z-index: 30;
     background-color: v.$k-black;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
@@ -46,7 +52,7 @@
         margin: 20px auto;
 
         img {
-            height: 50px;
+            height: 36px;
         }
     }
 
@@ -89,5 +95,161 @@
 
 .off-screen.active {
     top: 0;
+}
+
+// Tablet Size
+@media screen and (min-width: 768px) {
+    .hamburger-btn {
+        display: none;
+    }
+
+    #logo-nav {
+        display: block;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px;
+        width: 10%;
+        position: fixed;
+
+        a {
+            height: 50px;
+        }
+    }
+
+    .off-screen {
+        z-index: 10;
+        background: none;
+        border-radius: 0;
+        border-bottom: none;
+        box-shadow: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: v.$body-font;
+        font-size: 12px;
+        width: 80%;
+        text-align: center;
+        top: 0;
+        right: 0;
+        transition: .3s ease-in-out;
+
+        #logo-off {
+            display: none;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin: 0 10px;
+        }
+
+        ul li a {
+            color: v.$k-black;
+            text-decoration: none;
+        }
+    
+        .socmed-nav {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            filter: none;
+    
+            li {
+                margin: 0 10px;
+            }
+    
+            li a img {
+                height: 24px;
+            }
+        }
+    
+        .close-btn {
+            display: none;
+        }
+    }
+}
+
+// Laptop Size
+@media screen and (min-width: 1200px) {
+    .hamburger-btn {
+        display: none;
+    }
+
+    #logo-nav {
+        display: block;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px;
+        width: 10%;
+        position: fixed;
+
+        a {
+            height: 50px;
+        }
+    }
+
+    .off-screen {
+        z-index: 10;
+        background: none;
+        border-radius: 0;
+        border-bottom: none;
+        box-shadow: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: v.$body-font;
+        font-size: v.$title;
+        width: 80%;
+        text-align: center;
+        top: 0;
+        right: 0;
+        transition: .3s ease-in-out;
+
+        #logo-off {
+            display: none;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin: 0 10px;
+        }
+
+        ul li a {
+            color: v.$k-black;
+            text-decoration: none;
+        }
+    
+        .socmed-nav {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            filter: none;
+    
+            li {
+                margin: 0 10px;
+            }
+    
+            li a img {
+                height: 24px;
+            }
+        }
+    
+        .close-btn {
+            display: none;
+        }
+    }
 }
 

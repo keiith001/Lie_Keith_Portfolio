@@ -1,3 +1,113 @@
+@use "../abstracts/variables" as v;
+
 #hero-banner {
     margin-top: 90px;
 }
+
+body {
+    font-family: v.$body-font;
+}
+
+// Hero Banner
+#hero-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: v.$k-black;
+
+    p {
+        margin: -5px;
+    }
+
+    .opening-caption {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    #creative-copy {
+        font-size: 48px;
+        font-weight: 300;
+    }
+
+    #problem-copy {
+        font-family: v.$header-font;
+        font-size: 48px;
+        font-weight: 800;
+    }
+
+    #solver-copy {
+        font-family: v.$header-font;
+        font-size: 48px;
+        font-weight: 800;
+        margin-top: 2px;
+    }
+}
+
+// Skills
+#skill-showcase {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    li {
+        margin: 4px;
+        font-size: v.$bodycopy;
+        color: v.$body-color;
+    }
+}
+
+// Bio
+#hero-bio {
+    padding: 10px 20px 10px 20px;
+    display: block;
+    color: v.$body-color;
+    font-size: v.$bodycopy;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+// Video
+video {
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+// Decor Image
+#hero-decor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    img {
+        margin: 20px auto;
+    }
+}
+
+.decor {
+    z-index: v.$decor-post;
+    position: absolute;
+}
+
+// Featured Work Section
+#feat-work-sect {
+    margin: 20px auto;
+}
+
