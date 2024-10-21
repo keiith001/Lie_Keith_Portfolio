@@ -25,6 +25,35 @@
     margin-top: 20px;
 }
 
+.header-section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-family: v.$header-font;
+    font-size: v.$title;
+    color: rgb(161, 161, 161);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+// Font-weight
+.pb-bold {
+    font-weight: 800;
+}
+
+// Font-size
+.caption {
+    font-size: 10px;
+}
+
+.works-year {
+    font-size: 14px;
+}
+
 // Featured Work Thumbnail Tpography
 .work-caption-cont {
     display: flex;
@@ -48,13 +77,49 @@
     font-weight: 700;
 }
 
+// Work Archives
+.work-archive-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
 @media screen and (min-width: 768px) {
+    // Font Size
+    .caption {
+        font-size: 12px;
+    }
+
+    .works-year {
+        font-size: 16px;
+    }
+
+    // Work Archives
+    .work-archive-title {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
     .header-section {
         font-family: v.$header-font;
         font-size: v.$m-headercopy;
         color: v.$k-black;
         font-weight: 800;
         margin-top: 20px;
+    }
+
+    .header-section-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+        font-family: v.$header-font;
+        font-size: v.$title;
+        color: rgb(161, 161, 161);
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .work-caption-cont {
@@ -81,12 +146,43 @@
 }
 
 @media screen and (min-width: 1200px) {
+    // Font Size
+    .caption {
+        font-size: 14px;
+    }
+
+    .works-year {
+        font-size: 20px;
+    }
+
+    // Work Archives
+    .work-archive-title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+
     .header-section {
         font-family: v.$header-font;
         font-size: v.$l-headercopy;
         color: v.$k-black;
         font-weight: 800;
         margin-top: 20px;
+    }
+    
+    .header-section-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+        font-family: v.$header-font;
+        font-size: v.$headercopy;
+        color: rgb(161, 161, 161);
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .work-caption-cont {

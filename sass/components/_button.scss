@@ -134,3 +134,43 @@
     // background-size: cover;
     // background-repeat: no-repeat;
 }
+
+.view-detail-btn {
+    padding: 8px 12px 8px 12px;
+    border: solid v.$k-black .5px;
+    color: v.$k-black;
+    font-size: 8px;
+    text-decoration: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+    backdrop-filter: blur(10px);
+    transition: .3s all ease-in-out;
+
+    span {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .view-detail-btn {
+        padding: 8px 12px 8px 12px;
+        border: solid v.$k-black .5px;
+        color: v.$k-black;
+        font-size: 12px;
+        text-decoration: none;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 12px 0;
+        backdrop-filter: blur(10px);
+        transition: .3s all ease-in-out;
+    
+        span {
+            margin-left: 10px;
+        }
+    }
+}
