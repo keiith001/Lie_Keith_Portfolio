@@ -1,0 +1,198 @@
+@use "../abstracts/variables" as v;
+
+#about-banner {
+    margin-top: 90px;
+}
+
+// Page Banner
+#abt-headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: v.$k-black;
+    margin-bottom: 30px;
+
+    p {
+        font-size: 24px;
+    }
+
+    #abt-capt {
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    #abt-name {
+        font-family: v.$header-font;
+        font-size: 36px;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        font-weight: 800;
+    }
+}
+
+#short-bio {
+    p {
+    color: v.$body-color;
+    margin-top: 10px;
+    margin-bottom: 20px;
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+#skill-interest {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    p {
+        margin-top: 10px;
+    }
+}
+
+#education {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    p {
+        font-size: v.$bodycopy;
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .edu-cont {
+        margin-top: 10px;
+    }
+}
+
+#awards {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    p {
+        font-size: v.$bodycopy;
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .awd-cont {
+        margin-top: 10px;
+    }
+}
+
+#experience {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .experience-cont {
+        display: flex;
+        flex-direction: column;
+
+        .exp-year {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .work-duration {
+                font-weight: 700;
+            }
+        }
+
+        .job-detail {
+            p {
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    // Page Banner
+    #abt-headline {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: v.$k-black;
+        margin-bottom: 30px;
+
+        p {
+            font-size: 54px;
+        }
+
+        #abt-capt {
+            font-weight: 300;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        #abt-name {
+            font-family: v.$header-font;
+            font-size: 72px;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            font-weight: 800;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    // Page Banner
+    #abt-headline {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: v.$k-black;
+        margin-bottom: 30px;
+
+        p {
+            font-size: 82px;
+        }
+
+        #abt-capt {
+            font-weight: 300;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        #abt-name {
+            font-family: v.$header-font;
+            font-size: 128px;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            font-weight: 800;
+        }
+    }
+
+    #short-bio {
+        margin-bottom: 60px;
+
+        p {
+        color: v.$body-color;
+        margin-top: 10px;
+        margin-bottom: 20px;
+            span {
+                font-weight: 700;
+            }
+        }
+
+        a{
+            width: 30%;
+        }
+    }
+}
+

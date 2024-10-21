@@ -40,6 +40,21 @@
     margin-bottom: 20px;
 }
 
+.header-section-3 {
+    font-family: v.$header-font;
+    font-size: v.$headercopy;
+    color: v.$grey;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.cs-header-process {
+    font-family: v.$header-font;
+    font-size: 20px;
+    color: v.$k-black;
+    font-weight: 800;
+}
+
 // Font-weight
 .pb-bold {
     font-weight: 800;
@@ -52,6 +67,15 @@
 
 .works-year {
     font-size: 14px;
+}
+
+.body-copy {
+    font-size: v.$bodycopy;
+    color: v.$body-color;
+}
+
+.jobdesc-list {
+    font-size: v.$bodycopy;
 }
 
 // Featured Work Thumbnail Tpography
@@ -91,6 +115,14 @@
 
     .works-year {
         font-size: 16px;
+    }
+
+    .body-copy {
+        font-size: v.$m-bodycopy;
+    }
+    
+    .jobdesc-list {
+        font-size: v.$m-bodycopy;
     }
 
     // Work Archives
@@ -153,6 +185,14 @@
 
     .works-year {
         font-size: 20px;
+    }
+
+    .body-copy {
+        font-size: v.$l-bodycopy;
+    }
+    
+    .jobdesc-list {
+        font-size: v.$l-bodycopy;
     }
 
     // Work Archives
