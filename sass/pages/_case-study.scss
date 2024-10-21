@@ -1,0 +1,271 @@
+@use "../abstracts/variables" as v;
+
+#cs-banner {
+    margin-top: 90px;
+    background: url(/images/projects/thumbnail/l-sqzit-thumbnail.png);
+    background-color: v.$grey;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+    .works-logo {
+        margin-top: 80px;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+    }
+
+    .tools-cont {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 14px 10px 14px;
+
+        p {
+            text-align: right;
+            font-size: v.$bodycopy;
+            color: v.$white;
+        }
+
+        .tools-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            margin-top: 2px;
+
+            li {
+                list-style: none;
+
+                img {
+                    height: 24px;
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+}
+
+#work-overview {
+    margin-top: 20px;
+
+    .cs-content {
+        margin-top: 5px;
+
+        .work-info {
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            .wi-caption {
+                margin-top: 10px;
+            }
+        }
+
+        img {
+            border-radius: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #cs-banner {
+        .works-logo {
+            margin-top: 120px;
+            margin-bottom: 80px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+        }
+
+        .tools-cont {
+            display: flex;
+            flex-direction: column;
+            padding: 12px 16px 12px 16px;
+    
+            p {
+                text-align: right;
+                font-size: v.$m-bodycopy;
+                color: v.$white;
+            }
+    
+            .tools-list {
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                margin-top: 4px;
+    
+                li {
+                    list-style: none;
+    
+                    img {
+                        height: 32px;
+                        margin-left: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+    #work-overview {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        .cs-header-cont {
+            width: 20%;
+            padding-right: 20px;
+        }
+
+        .cs-content {
+            margin-top: 5px;
+            width: 80%;
+    
+            .work-info {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+    
+                .wi-caption {
+                    margin-top: 10px;
+                    width: 25%;
+                }
+            }
+    
+            img {
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .cs-cont {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .cs-header-cont {
+            width: 20%;
+            padding-right: 20px;
+        }
+
+        .cs-content {
+            margin-top: 5px;
+            width: 80%;
+    
+            img {
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #cs-banner {
+        .works-logo {
+            margin-top: 160px;
+            margin-bottom: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+        }
+
+        .tools-cont {
+            display: flex;
+            flex-direction: column;
+            padding: 16px 20px 16px 20px;
+    
+            p {
+                text-align: right;
+                font-size: v.$l-bodycopy;
+                color: v.$white;
+            }
+    
+            .tools-list {
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                margin-top: 6px;
+    
+                li {
+                    list-style: none;
+    
+                    img {
+                        height: 48px;
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    #work-overview {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        .cs-header-cont {
+            width: 20%;
+            padding-right: 20px;
+        }
+
+        .cs-content {
+            margin-top: 5px;
+            width: 80%;
+    
+            .work-info {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+    
+                .wi-caption {
+                    margin-top: 10px;
+                    width: 25%;
+                }
+            }
+    
+            img {
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .cs-cont {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .cs-header-cont {
+            width: 20%;
+            padding-right: 20px;
+        }
+
+        .cs-content {
+            margin-top: 5px;
+            width: 80%;
+    
+            img {
+                border-radius: 20px;
+            }
+        }
+    }
+}
