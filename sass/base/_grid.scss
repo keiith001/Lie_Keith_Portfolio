@@ -59,6 +59,11 @@ ul {
   margin: 40px auto;
 }
 
+.line-seperator-dash {
+  border-top: .5px dashed v.$body-color;
+  width: 100%;
+}
+
 /* ---Mobile Library Grid Styles--- */
 
 .full-width-grid-con {

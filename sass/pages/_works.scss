@@ -1,0 +1,369 @@
+@use "../abstracts/variables" as v;
+
+#works-banner {
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+// Page Banner
+#wb-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: v.$k-black;
+
+    p {
+        font-size: 24px;
+    }
+
+    .opening-caption {
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            margin-top: -5px;
+        }
+    }
+
+    .pb-bold {
+        font-family: v.$header-font;
+        font-size: 36px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#w-skill-showcase {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    li {
+        margin: 4px;
+        font-size: v.$bodycopy;
+        color: v.$body-color;
+    }
+}
+
+#check-these-out {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: v.$k-black;
+    font-size: 12px;
+
+    span {
+        font-weight: 700;
+    }
+    
+    img {
+        margin-top: 10px;
+        padding: 5px;
+        height: 25px;
+    }
+}
+
+#other-works {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    background-color: v.$bggrey;
+
+    .work-a-cont {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        color: v.$body-color;
+
+        .work-a-time {
+            margin-right: 20px;
+            width: 20%;
+        }
+
+        .work-a-list {
+            margin-top: 16px;
+            width: 80%;
+
+            .tag-lists {
+                display: flex;
+                flex-direction: row;
+                margin-top: 4px;
+
+                li {
+                    font-size: v.$bodycopy;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}
+
+// Tablet Size
+@media screen and (min-width: 768px) {
+    // Page Banner
+    #wb-headline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: v.$k-black;
+    
+        p {
+            font-size: 28px;
+        }
+    
+        .opening-caption {
+            font-weight: 300;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+    
+            span {
+                margin-top: -5px;
+            }
+        }
+    
+        .pb-bold {
+            font-family: v.$header-font;
+            font-size: 40px;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    #w-skill-showcase {
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    
+        ul {
+            margin: 0;
+            padding: 0;
+    
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }    
+    
+        li {
+            margin: 4px;
+            font-size: v.$m-bodycopy;
+            color: v.$body-color;
+        }
+    }
+    
+    #check-these-out {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: v.$k-black;
+        font-size: 16px;
+    
+        span {
+            font-weight: 700;
+        }
+        
+        img {
+            margin-top: 10px;
+            padding: 5px;
+            height: 25px;
+        }
+    }
+
+    #other-works {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 20px auto;
+        background-color: v.$bggrey;
+    
+        .work-a-cont {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            color: v.$body-color;
+    
+            .work-a-time {
+                margin-right: 20px;
+                width: 20%;                
+            }
+    
+            .work-a-list {
+                margin-top: 16px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 80%;
+    
+                .tag-lists {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 4px;
+    
+                    li {
+                        font-size: v.$m-bodycopy;
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Tablet Size
+@media screen and (min-width: 768px) {
+    // Page Banner
+    #wb-headline {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: v.$k-black;
+    
+        p {
+            font-size: 48px;
+        }
+    
+        .opening-caption {
+            font-weight: 300;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+    
+            span {
+                margin-top: -5px;
+            }
+        }
+    
+        .pb-bold {
+            font-family: v.$header-font;
+            font-size: 72px;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    #w-skill-showcase {
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    
+        ul {
+            margin: 0;
+            padding: 0;
+    
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }    
+    
+        li {
+            margin: 4px;
+            font-size: v.$l-bodycopy;
+            color: v.$body-color;
+        }
+    }
+    
+    #check-these-out {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: v.$k-black;
+        font-size: 18px;
+    
+        span {
+            font-weight: 700;
+        }
+        
+        img {
+            margin-top: 10px;
+            padding: 5px;
+            height: 25px;
+        }
+    }
+
+    #other-works {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 20px auto;
+        background-color: v.$bggrey;
+    
+        .work-a-cont {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            color: v.$body-color;
+    
+            .work-a-time {
+                margin-right: 20px;
+                width: 20%;                
+            }
+    
+            .work-a-list {
+                margin-top: 16px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 80%;
+    
+                .tag-lists {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 4px;
+    
+                    li {
+                        font-size: v.$l-bodycopy;
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

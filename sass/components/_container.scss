@@ -20,5 +20,41 @@
     margin: 50px auto;
 }
 
+// Color Container
+.uxui-cont {
+    padding: 4px 8px 4px 8px;
+    background: rgb(79, 214, 79);
+    color: v.$white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.graphic-cont {
+    padding: 4px 8px 4px 8px;
+    background: rgb(255, 114, 33);
+    color: v.$white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.web-cont {
+    padding: 4px 8px 4px 8px;
+    background: rgb(33, 176, 228);
+    color: v.$white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
 @media screen and (min-width: 768px) {
 }
