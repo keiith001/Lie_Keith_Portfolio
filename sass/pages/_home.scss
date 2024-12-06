@@ -102,8 +102,8 @@ video {
     position: absolute;
     width: 100%;
 
-    img {
-        margin: 20px auto;
+    #k-logo-3d {
+        width: 200px;
     }
 }
 
@@ -197,9 +197,8 @@ video {
         width: 60%;
         right: 0;
 
-        img {
-            margin: 20px auto;
-            height: 300px;
+        #k-logo-3d {
+            width: 300px;
         }
     }
 
@@ -290,9 +289,10 @@ video {
         width: 60%;
         right: 0;
 
-        img {
-            margin: 60px auto;
-            height: 450px;
+        #k-logo-3d {
+            position: absolute;
+            top: 60px;
+            width: 450px;
         }
     }
 

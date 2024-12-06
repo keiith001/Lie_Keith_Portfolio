@@ -64,8 +64,8 @@
 
         <!-- Decoration -->
         <div class="decor-container col-span-full">
-          <img id="star2-decor" src="./images/decorations/star-2.png" alt="Decorative Image">
-          <img id="swirl4-decor" src="./images/decorations/swirl-3.png" alt="Decorative Image">
+          <img id="star2-decor" class="floating-anim" src="./images/decorations/star-2.png" alt="Decorative Image">
+          <img id="swirl4-decor" class="floating-anim" src="./images/decorations/swirl-3.png" alt="Decorative Image">
         </div>
 
         <!-- Headline -->
@@ -80,47 +80,47 @@
         <h2 class="hidden">Works/Hobbies Collage</h2>
 
         <!-- Image #1 -->
-        <div class="workpiece-cont col-span-4 m-col-span-4 l-col-span-4">
+        <div class="fade-in workpiece-cont col-span-4 m-col-span-4 l-col-span-4">
           <img src="./images/playground/belfoy-2.jpg" alt="Project Image">
         </div>
 
         <!-- Image #2 -->
-        <div class="workpiece-cont col-span-4 m-col-span-4 l-col-span-4">
+        <div class="fade-in workpiece-cont col-span-4 m-col-span-4 l-col-span-4">
           <img src="./images/playground/belfoy.jpg" alt="Project Image">
         </div>
 
         <!-- Image #3 -->
-        <div class="workpiece-cont col-span-4 m-col-span-4 l-col-span-4">
+        <div class="fade-in workpiece-cont col-span-4 m-col-span-4 l-col-span-4">
           <img src="./images/playground/takoyaki-1.jpg" alt="Project Image">
         </div>
 
         <!-- Image #4 -->
-        <div class="workpiece-cont col-span-4 m-col-span-6 l-col-span-6">
+        <div class="fade-in workpiece-cont col-span-4 m-col-span-6 l-col-span-6">
           <img src="./images/playground/display-rack.jpg" alt="Project Image">
         </div>
 
         <!-- Image #5 -->
-        <div class="workpiece-cont col-span-4 m-col-span-6 l-col-span-6">
+        <div class="fade-in workpiece-cont col-span-4 m-col-span-6 l-col-span-6">
           <img src="./images/playground/booth-3d.jpg" alt="Project Image">
         </div>
 
         <!-- Image #6 -->
-        <div class="workpiece-cont col-span-4 m-col-span-9 l-col-span-3">
+        <div class="fade-in workpiece-cont col-span-4 m-col-span-9 l-col-span-3">
           <img src="./images/playground/lele-socmed.jpg" alt="Project Image">
         </div>
 
         <!-- Image #7 -->
-        <div class="workpiece-cont col-span-4 m-col-span-3 l-col-span-9">
+        <div class="fade-in workpiece-cont col-span-4 m-col-span-3 l-col-span-9">
           <img src="./images/playground/ilustration-1.jpg" alt="Project Image">
         </div>
       </section>
       
       <!-- THIS SECTION WILL BE ON EVERY PAGE -->
       <!-- CONTACT -->
-      <section id="contact" class="grid-con">
+      <section id="contact" class="grid-con fade-in">
         <h2 class="hidden">Contact Me</h2>
         <!-- Decoration -->
-        <div class="footer-decor col-span-full">
+        <div class="floating-anim footer-decor col-span-full">
           <img id="swirl-decor" src="./images/decorations/swirl-1.png" alt="Decorative Image">
         </div>
 
@@ -149,7 +149,7 @@
           </ul>
         </div>
 
-        <div class="footer-decor col-span-full">
+        <div class="floating-anim footer-decor col-span-full">
           <img id="twist-decor" src="./images/decorations/twist-1.png" alt="Decorative Image">
         </div>
 
@@ -206,6 +206,11 @@
     </footer>
   
     <!-- JS -->
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+
+    <!-- Main JS -->
     <script src="./js/main.js"></script>
   </body>
 </html>
