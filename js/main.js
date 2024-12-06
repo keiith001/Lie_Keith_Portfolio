@@ -2,6 +2,21 @@
 
 console.log("Js is Connected");
 
+// Plyr Video Player
+const player = new Plyr('video');
+
+player.muted = true;
+player.autplay = true;
+
+// Unmute when Fullscreen
+function unmutePlayer() {
+  player.muted = false;
+  player.volume = 1;
+  console.log("Player is unmuted due to fullscreen environment.")
+}
+
+player.on('enterfullscreen', unmutePlayer);
+
 // Responsive Screen Area
 // =====================
 const screenSize = window.innerWidth;
