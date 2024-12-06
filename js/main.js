@@ -2,11 +2,21 @@
 
 console.log("Js is Connected");
 
-// Variables
+// Responsive Screen Area
 // =====================
-
-// General Screen Area
 const screenSize = window.innerWidth;
+
+function screenSizeTracker() {
+  console.log(`Screen width: ${screenSize}px`);
+
+  if (screenSize > 768) {
+    console.log("Screen is tablet to desktop size.");
+  } else {
+    console.log("Screen is mobile-size.");
+  }
+}
+
+window.addEventListener("resize", screenSizeTracker);
 
 // Mobile Navigation
 // =====================
@@ -89,10 +99,15 @@ const workCard = document.querySelectorAll('.work-card');
 let currentIndex = 0;
 const totalCards = workCard.length;
 const cardWidth = workCard[0].offsetWidth + 20;
-const autoCarouselTime = 3;
+const autoCarouselTime = 4;
+let animation = false;
 
 // Function
 function moveCarousel(index) {
+  if (animation) return;
+
+  animation = true;
+
   if (index < 0) {
     currentIndex = totalCards - 1;
   } else if (index >= totalCards) {
@@ -103,9 +118,12 @@ function moveCarousel(index) {
 
   // Smooth Transition with GSAP
   gsap.to(workCarousel, {
-    duration: 1,
+    duration: 0.5,
     x: -currentIndex * cardWidth,
-    ease: "power2.inOut",
+    ease: "power1.inOut",
+    onComplete: () => {
+      animation = false;
+    }
   });
 }
 
@@ -121,10 +139,10 @@ function touchStartPoint(e) {
 function touchEndPoint(e) {
   touchEndX = e.changedTouches[0].clientX;
 
-  if (touchStartX - touchEndX > 50) {
+  if (touchStartX - touchEndX > 30) {
     // Swipe Left
     moveCarousel(currentIndex + 1);
-  } else if (touchEndX - touchStartX > 50) {
+  } else if (touchEndX - touchStartX > 30) {
     // Swipe Right
     moveCarousel(currentIndex - 1);
   }
@@ -147,11 +165,5 @@ autoCarousel();
 // Event Listener
 workCarousel.addEventListener('touchstart', touchStartPoint);
 workCarousel.addEventListener('touchend', touchEndPoint);
-
-
-
-
-
-
 
 })();
