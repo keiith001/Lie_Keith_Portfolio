@@ -84,11 +84,6 @@ body {
 }
 
 // Video
-video {
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-
 .video-size {
     width: 100%;
     height: 100%;
@@ -301,17 +296,11 @@ video {
     }
 
     // Video
-    video {
-        border-radius: 20px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-
     .video-size {
         width: 100%;
         height: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
-
-
 }
 

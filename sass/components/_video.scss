@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as v;
+
+:root {
+    --plyr-color-main: rgb(0, 106, 255);
+    --plyr-control-icon-size: 14px;
+    --plyr-control-radius: 30px;
+}
+
+.plyr {
+    border-radius: 20px;
+    border: 0.5px v.$k-black solid;
+    overflow: hidden;
+  }
