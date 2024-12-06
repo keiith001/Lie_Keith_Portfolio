@@ -1,5 +1,31 @@
 @use "../abstracts/variables" as v;
 
+// Decoration
+.footer-decor {
+    position: relative;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    #swirl-decor {
+        position: absolute;
+        z-index: 10;
+        width: 100px;
+        top: -50px;
+        right: 20%;
+        margin-right: -70px;
+    }
+
+    #twist-decor {
+        position: absolute;
+        z-index: 10;
+        width: 100px;
+        bottom: -10px;
+        left: 20%;
+        margin-left: -70px;
+    }
+}
+
 // Contact by Email Footer
 #contact {
     margin-top: 80px;
@@ -199,6 +225,32 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    // Decoration
+    .footer-decor {
+        position: relative;
+        height: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        #swirl-decor {
+            position: absolute;
+            z-index: 10;
+            width: 170px;
+            top: -50px;
+            right: 10%;
+            margin-right: -70px;
+        }
+
+        #twist-decor {
+            position: absolute;
+            z-index: 10;
+            width: 150px;
+            bottom: -10px;
+            left: 12%;
+            margin-left: -70px;
+        }
+    }
+
     #contact {
         .contact-headline {
             font-size: 48px;
@@ -297,7 +349,7 @@ footer {
             align-items: baseline;
     
             p {
-                font-size: v.$bodycopy;
+                font-size: v.$m-bodycopy;
                 text-align: left;
             }
     
@@ -309,6 +361,32 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
+    // Decoration
+    .footer-decor {
+        position: relative;
+        height: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        #swirl-decor {
+            position: absolute;
+            z-index: 10;
+            width: 200px;
+            top: -50px;
+            right: 10%;
+            margin-right: -70px;
+        }
+
+        #twist-decor {
+            position: absolute;
+            z-index: 10;
+            width: 170px;
+            bottom: -10px;
+            left: 15%;
+            margin-left: -70px;
+        }
+    }
+
     #contact {
         .contact-headline {
             font-size: 72px;
@@ -406,7 +484,7 @@ footer {
             align-items: baseline;
     
             p {
-                font-size: v.$bodycopy;
+                font-size: v.$l-bodycopy;
                 text-align: left;
             }
     

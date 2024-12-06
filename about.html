@@ -32,9 +32,9 @@
 
             <!-- Page Nav -->
             <ul id="page-nav">
-              <li><a href="works.html">Works</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="playground.html">Playground</a></li>
+              <li><a id="works-menu" href="works.html">Works</a></li>
+              <li><a id="about-menu" href="about.html">About</a></li>
+              <li><a id="playground-menu" href="playground.html">Playground</a></li>
               <li class="secondary-btn"><a href="#contact">Contact</a></li>
             </ul>
 
@@ -61,9 +61,34 @@
       <!-- Page Banner Section -->
       <section id="about-banner" class="grid-con">
         <h2 class="hidden">About Keith</h2>
+        <!-- Profile Picture -->
+        <div id="profile-pic" class="col-span-4 m-col-start-2 m-col-span-3 l-col-start-2 l-col-span-2">
+          <h3 class="hidden">Profile Picture</h3>
+          <img id="star-decor" src="./images/decorations/star-1.png" alt="Decorative Image">
+          <img id="torus-decor" src="./images/decorations/torus-1.png" alt="Decorative Image">
+          
+          <picture class="thumb-img">
+            <source
+            media="(max-width: 767px)"
+            sizes="(max-width: 651px) 100vw, 651px"
+            srcset="
+            ./images/profile-picture/m-profile-photo.jpg">
+
+            <source
+            media="(min-width: 768px)"
+            sizes="(max-width: 961px) 70vw, 673px"
+            srcset="
+            ./images/profile-picture/d-profile-photo.jpg">
+            
+            <img
+            sizes="(max-width: 2390px) 40vw, 956px"
+            src="./images/profile-picture/d-profile-photo.jpg"
+            alt="Profile Picture">
+          </picture>
+        </div>
 
         <!-- Headline -->
-        <div id="abt-headline" class="col-span-4 m-col-start-2 m-col-span-10 l-col-start-2 l-col-span-10">
+        <div id="abt-headline" class="col-span-4 m-col-start-5 m-col-span-6 l-col-start-4 l-col-span-8">
           <p id="abt-capt">Hey! I'm</p>
           <p id="abt-name">Keith Richard</p>
         </div>
@@ -81,15 +106,9 @@
 
       <!-- Content Section -->
       <section class="grid-con">
-        <h2 class="hidden">About Keith Content</h2>
-        <!-- Skills & Interest -->
-        <div id="skill-interest" class="col-span-4 m-col-start-2 m-col-span-4 l-col-start-2 l-col-span-4">
-          <h3 class="header-section-3">Skills &#38; Interest</h3>
-          <p class="body-copy">Solving problems through visual communication design is my passion. I like the challenge in creating concepts to help people with creative design, from small businesses, startups, and big corporations. Be it print designs, social media, websites, restaurant menu, even catalogue, I got you. Creating designs that are “fresh” yet functions well with its users is what my bar at. Mostly interested in the UX/UI industry that also connects closely with Web Designing/Developing (Front-End). So. nowadays I'm in the process of polishing my skill and knowledge in that area to sharpen my blade and level up my Earth Character's stats.</p>
-        </div>
-        
+        <h2 class="hidden">About Keith Content</h2>        
         <!-- Education -->
-        <div id="education" class="col-span-4 m-col-span-3 l-col-span-3">
+        <div id="education" class="col-span-4 m-col-start-2 m-col-span-5 l-col-start-4 l-col-span-4">
           <h3 class="header-section-3">Education</h3>
 
           <!-- Education #1 -->
@@ -106,7 +125,7 @@
         </div>
 
         <!-- Awards -->
-        <div id="awards" class="col-span-4 m-col-span-3 l-col-span-3">
+        <div id="awards" class="col-span-4 m-col-span-5 l-col-start-8 l-col-span-4">
           <h3 class="header-section-3">Awards</h3>
 
           <!-- Award #1 -->
@@ -117,7 +136,7 @@
         </div>
 
         <!-- Experience -->
-        <div id="experience" class="col-span-4 m-col-start-2 m-col-span-10 l-col-start-2 l-col-span-10">
+        <div id="experience" class="col-span-4 m-col-start-2 m-col-span-10 l-col-start-4 l-col-span-8">
           <h3 class="header-section-3">Experience</h3>
 
           <!-- Experience #1 -->
@@ -189,12 +208,16 @@
       <!-- CONTACT -->
       <section id="contact" class="grid-con">
         <h2 class="hidden">Contact Me</h2>
+        <!-- Decoration -->
+        <div class="footer-decor col-span-full">
+          <img id="swirl-decor" src="./images/decorations/swirl-1.png" alt="Decorative Image">
+        </div>
 
         <!-- Email Button -->
-        <a href="mailto:kith.richrd@gmail.com?subject=Hey%20Fella&body=I'm%20..." class="col-span-4 m-col-start-4 m-col-span-6 email-contact-btn">kith.richrd@gmail.com <img src="./images/icons/mail-icon-black.svg" alt="Mail Icon"></a>
+        <a href="mailto:kith.richrd@gmail.com?subject=Hey%20Fella&body=I'm%20..." class="col-span-4 m-col-start-4 m-col-span-6 email-contact-btn">Drop Me Your Problems <img src="./images/icons/mail-icon-black.svg" alt="Mail Icon"></a>
 
         <!-- Copy -->
-        <p class="col-span-4 m-col-span-12 l-col-span-12 contact-headline">Let's Make Ideas
+        <p class="col-span-4 m-col-span-12 l-col-span-12 contact-headline">Let's Make It
           <span>FEASIBLE</span>
           <span>TOGETHER</span>
         </p>
@@ -215,6 +238,10 @@
           </ul>
         </div>
 
+        <div class="footer-decor col-span-full">
+          <img id="twist-decor" src="./images/decorations/twist-1.png" alt="Decorative Image">
+        </div>
+        
         <div class="line-seperator col-span-4 m-col-span-12"></div>
         
         <div id="contact-text" class="col-span-4 m-col-start-1 m-col-span-12">

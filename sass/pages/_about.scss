@@ -4,13 +4,42 @@
     margin-top: 90px;
 }
 
+// Profile Picture
+#profile-pic {
+    position: relative;
+    margin-bottom: 10px;
+
+    #star-decor {
+        position: absolute;
+        z-index: 10;
+        width: 100px;
+        top: -50px;
+        right: 10%;
+        margin-right: -70px;
+    }
+
+    #torus-decor {
+        position: absolute;
+        z-index: 10;
+        width: 100px;
+        bottom: -10px;
+        left: 10%;
+        margin-left: -70px;
+        rotate: -30deg;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
 // Page Banner
 #abt-headline {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: v.$k-black;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
     p {
         font-size: 24px;
@@ -28,7 +57,7 @@
         font-size: 36px;
         display: flex;
         flex-direction: column;
-        text-align: right;
+        text-align: left;
         font-weight: 800;
     }
 }
@@ -118,16 +147,45 @@
 }
 
 @media screen and (min-width: 768px) {
+    // Profile Picture
+    #profile-pic {
+        position: relative;
+        margin-bottom: 10px;
+
+        #star-decor {
+            position: absolute;
+            z-index: 10;
+            width: 80px;
+            top: -50px;
+            right: 20%;
+            margin-right: -70px;
+        }
+
+        #torus-decor {
+            position: absolute;
+            z-index: 10;
+            width: 80px;
+            bottom: -10px;
+            left: 10%;
+            margin-left: -70px;
+            rotate: -30deg;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
     // Page Banner
     #abt-headline {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: start;
         color: v.$k-black;
         margin-bottom: 30px;
 
         p {
-            font-size: 54px;
+            font-size: 56px;
         }
 
         #abt-capt {
@@ -139,11 +197,43 @@
 
         #abt-name {
             font-family: v.$header-font;
-            font-size: 72px;
+            font-size: 82px;
             display: flex;
             flex-direction: column;
-            text-align: right;
+            text-align: left;
             font-weight: 800;
+        }
+    }
+
+    #education {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+        p {
+            font-size: v.$m-bodycopy;
+            span {
+                font-weight: 700;
+            }
+        }
+    
+        .edu-cont {
+            margin-top: 10px;
+        }
+    }
+    
+    #awards {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+        p {
+            font-size: v.$m-bodycopy;
+            span {
+                font-weight: 700;
+            }
+        }
+    
+        .awd-cont {
+            margin-top: 10px;
         }
     }
 }
@@ -155,7 +245,7 @@
         flex-direction: column;
         justify-content: space-between;
         color: v.$k-black;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
 
         p {
             font-size: 82px;
@@ -170,10 +260,10 @@
 
         #abt-name {
             font-family: v.$header-font;
-            font-size: 128px;
+            font-size: 104px;
             display: flex;
             flex-direction: column;
-            text-align: right;
+            text-align: left;
             font-weight: 800;
         }
     }
@@ -192,6 +282,38 @@
 
         a{
             width: 30%;
+        }
+    }
+
+    #education {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+        p {
+            font-size: v.$l-bodycopy;
+            span {
+                font-weight: 700;
+            }
+        }
+    
+        .edu-cont {
+            margin-top: 10px;
+        }
+    }
+    
+    #awards {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+        p {
+            font-size: v.$l-bodycopy;
+            span {
+                font-weight: 700;
+            }
+        }
+    
+        .awd-cont {
+            margin-top: 10px;
         }
     }
 }
