@@ -23,7 +23,6 @@
     background: linear-gradient(45deg, rgba(236,27,122,1) 0%, rgba(73,153,212,1) 48%, rgba(245,137,31,1) 100%);
     color: v.$white;
     filter: contrast(1.75);
-    border: solid v.$k-black 1px;
 }
 
 .secondary-btn {
@@ -98,9 +97,11 @@
     align-items: center;
     margin: 12px 0;
     backdrop-filter: blur(10px);
+    transition: .3s all ease-in-out;
 
     img {
         margin-left: 10px;
+        transition: .3s all ease-in-out;
     }
 }
 
@@ -129,7 +130,6 @@
     background: linear-gradient(45deg, rgba(236,27,122,1) 0%, rgba(73,153,212,1) 48%, rgba(245,137,31,1) 100%);
     color: v.$white;
     filter: contrast(1.75);
-    border: solid v.$k-black 1px;
     // background: url(/images/others/3x/gradient-background@3x-8.png);
     // background-size: cover;
     // background-repeat: no-repeat;
@@ -173,4 +173,25 @@
             margin-left: 10px;
         }
     }
+
+    .email-contact-btn:hover {
+        padding: 10px 16px 10px 16px;
+        border: solid v.$k-black .5px;
+        color: v.$white;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 12px 0;
+        backdrop-filter: blur(10px);
+        background-color: v.$k-black;
+
+        img {
+            margin-left: 10px;
+            filter: brightness(0) invert(1);
+        }
+    }
+    
 }

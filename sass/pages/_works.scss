@@ -5,6 +5,31 @@
     margin-bottom: 40px;
 }
 
+// Decoration
+.decor-container {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    #swirl2-decor {
+        position: absolute;
+        z-index: -1;
+        width: 80px;
+        top: 120px;
+        right: 20%;
+        margin-right: -120px;
+    }
+
+    #swirl3-decor {
+        position: absolute;
+        z-index: -1;
+        width: 80px;
+        top: 120px;
+        left: 20%;
+        margin-left: -120px;
+    }
+}
+
 // Page Banner
 #wb-headline {
     display: flex;
@@ -127,6 +152,31 @@
 
 // Tablet Size
 @media screen and (min-width: 768px) {
+    // Decoration
+    .decor-container {
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        #swirl2-decor {
+            position: absolute;
+            z-index: 10;
+            width: 200px;
+            top: 100px;
+            right: 20%;
+            margin-right: -200px;
+        }
+
+        #swirl3-decor {
+            position: absolute;
+            z-index: 10;
+            width: 200px;
+            top: 100px;
+            left: 20%;
+            margin-left: -200px;
+        }
+    }
+
     // Page Banner
     #wb-headline {
         display: flex;
@@ -248,8 +298,33 @@
     }
 }
 
-// Tablet Size
-@media screen and (min-width: 768px) {
+// Laptop Size
+@media screen and (min-width: 1200px) {
+    // Decoration
+    .decor-container {
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        #swirl2-decor {
+            position: absolute;
+            z-index: -1;
+            width: 200px;
+            top: 220px;
+            right: 20%;
+            margin-right: -250px;
+        }
+
+        #swirl3-decor {
+            position: absolute;
+            z-index: -1;
+            width: 200px;
+            top: 220px;
+            left: 20%;
+            margin-left: -250px;
+        }
+    }
+
     // Page Banner
     #wb-headline {
         margin-top: 40px;

@@ -32,9 +32,9 @@
 
             <!-- Page Nav -->
             <ul id="page-nav">
-              <li><a href="works.html">Works</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="playground.html">Playground</a></li>
+              <li><a id="works-menu" href="works.html">Works</a></li>
+              <li><a id="about-menu" href="about.html">About</a></li>
+              <li><a id="playground-menu" href="playground.html">Playground</a></li>
               <li class="secondary-btn"><a href="#contact">Contact</a></li>
             </ul>
 
@@ -61,10 +61,16 @@
       <!-- Page Banner Section -->
       <section id="works-banner" class="grid-con">
         <h2 class="hidden">Keith's Portfolio Works Section</h2>
+
+        <div class="decor-container col-span-full">
+          <img id="swirl2-decor" src="./images/decorations/swirl-2.png" alt="Decorative Image">
+          <img id="swirl3-decor" src="./images/decorations/swirl-3.png" alt="Decorative Image">
+        </div>
+
         <!-- Headline -->
         <div id="wb-headline" class="col-span-4 m-col-start-2 m-col-span-10">
-          <p class="opening-caption">I've Worked with <span>Various Clients to</span></p>
-          <p class="pb-bold">SOLVE THEIR <span>PROBLEMS</span></p>
+          <p class="opening-caption">I've Worked with Various Clients to</p>
+          <p class="pb-bold">SOLVE THEIR PROBLEMS</p>
           <p class="opening-caption">In the forms of</p>
         </div>
 
@@ -96,59 +102,7 @@
         <div class="work-card col-span-4 m-col-start-2 m-col-span-5">
           <h3 class="hidden">Work 1</h3>
           <!-- Thumbnail -->
-          <picture class="thumb-img">
-            <source
-            media="(max-width: 767px)"
-            sizes="(max-width: 651px) 100vw, 651px"
-            srcset="
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_320.png 320w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_375.png 375w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_422.png 422w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_468.png 468w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_503.png 503w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_542.png 542w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_579.png 579w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_609.png 609w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_649.png 649w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_651.png 651w">
-            <source
-            media="(min-width: 768px) and (max-width: 991px)"
-            sizes="(max-width: 991px) 70vw, 694px"
-            srcset="
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_4_3,c_fill,g_auto__c_scale,w_538.png 538w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_4_3,c_fill,g_auto__c_scale,w_585.png 585w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_4_3,c_fill,g_auto__c_scale,w_635.png 635w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_4_3,c_fill,g_auto__c_scale,w_683.png 683w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_4_3,c_fill,g_auto__c_scale,w_694.png 694w">
-            <source
-            media="(min-width: 992px) and (max-width: 1199px)"
-            sizes="(max-width: 1200px) 60vw, 720px"
-            srcset="
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_16_9,c_fill,g_auto__c_scale,w_596.png 596w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_16_9,c_fill,g_auto__c_scale,w_659.png 659w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_16_9,c_fill,g_auto__c_scale,w_702.png 702w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_16_9,c_fill,g_auto__c_scale,w_720.png 720w">
-            <img
-            sizes="(max-width: 2390px) 40vw, 956px"
-            srcset="
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_480.png 480w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_531.png 531w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_578.png 578w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_621.png 621w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_667.png 667w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_707.png 707w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_741.png 741w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_778.png 778w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_814.png 814w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_844.png 844w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_846.png 846w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_907.png 907w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_939.png 939w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_955.png 955w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_956.png 956w"
-            src="./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_956.png"
-            alt="Eternity Project Thumbnail">
-            </picture>
+          <img class="thumb-img" src="./images/projects/thumbnail/m-hk-thumb.jpg" alt="Project Thumbnail">
 
           <!-- Content -->
           <div class="work-caption-cont">
@@ -176,59 +130,7 @@
         <div class="work-card col-span-4 m-col-start-7 m-col-span-5">
           <h3 class="hidden">Work 2</h3>
           <!-- Thumbnail -->
-          <picture class="thumb-img">
-            <source
-            media="(max-width: 767px)"
-            sizes="(max-width: 651px) 100vw, 651px"
-            srcset="
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_320.png 320w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_375.png 375w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_422.png 422w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_468.png 468w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_503.png 503w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_542.png 542w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_579.png 579w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_609.png 609w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_649.png 649w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_651.png 651w">
-            <source
-            media="(min-width: 768px) and (max-width: 991px)"
-            sizes="(max-width: 991px) 70vw, 694px"
-            srcset="
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_4_3,c_fill,g_auto__c_scale,w_538.png 538w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_4_3,c_fill,g_auto__c_scale,w_585.png 585w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_4_3,c_fill,g_auto__c_scale,w_635.png 635w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_4_3,c_fill,g_auto__c_scale,w_683.png 683w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_4_3,c_fill,g_auto__c_scale,w_694.png 694w">
-            <source
-            media="(min-width: 992px) and (max-width: 1199px)"
-            sizes="(max-width: 1200px) 60vw, 720px"
-            srcset="
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_16_9,c_fill,g_auto__c_scale,w_596.png 596w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_16_9,c_fill,g_auto__c_scale,w_659.png 659w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_16_9,c_fill,g_auto__c_scale,w_702.png 702w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_16_9,c_fill,g_auto__c_scale,w_720.png 720w">
-            <img
-            sizes="(max-width: 2390px) 40vw, 956px"
-            srcset="
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_480.png 480w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_531.png 531w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_578.png 578w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_621.png 621w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_667.png 667w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_707.png 707w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_741.png 741w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_778.png 778w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_814.png 814w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_844.png 844w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_846.png 846w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_907.png 907w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_939.png 939w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_955.png 955w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_956.png 956w"
-            src="./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_956.png"
-            alt="Eternity Project Thumbnail">
-            </picture>
+          <img class="thumb-img" src="./images/projects/thumbnail/m-beeliv-thumb.jpg" alt="Project Thumbnail">
 
           <!-- Content -->
           <div class="work-caption-cont">
@@ -256,57 +158,7 @@
         <div class="work-card col-span-4 m-col-start-2 m-col-span-5">
           <h3 class="hidden">Work 3</h3>
           <!-- Thumbnail -->
-          <picture class="thumb-img">
-            <source
-            media="(max-width: 767px)"
-            sizes="(max-width: 651px) 100vw, 651px"
-            srcset="
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_320.png 320w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_378.png 378w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_429.png 429w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_480.png 480w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_521.png 521w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_564.png 564w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_601.png 601w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_635.png 635w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_651.png 651w">
-            <source
-            media="(min-width: 768px) and (max-width: 991px)"
-            sizes="(max-width: 991px) 70vw, 694px"
-            srcset="
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_4_3,c_fill,g_auto__c_scale,w_538.png 538w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_4_3,c_fill,g_auto__c_scale,w_595.png 595w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_4_3,c_fill,g_auto__c_scale,w_639.png 639w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_4_3,c_fill,g_auto__c_scale,w_685.png 685w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_4_3,c_fill,g_auto__c_scale,w_694.png 694w">
-            <source
-            media="(min-width: 992px) and (max-width: 1199px)"
-            sizes="(max-width: 1200px) 60vw, 720px"
-            srcset="
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_16_9,c_fill,g_auto__c_scale,w_596.png 596w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_16_9,c_fill,g_auto__c_scale,w_667.png 667w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_16_9,c_fill,g_auto__c_scale,w_716.png 716w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_16_9,c_fill,g_auto__c_scale,w_720.png 720w">
-            <img
-            sizes="(max-width: 2390px) 40vw, 956px"
-            srcset="
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_480.png 480w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_537.png 537w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_589.png 589w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_639.png 639w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_683.png 683w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_721.png 721w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_760.png 760w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_808.png 808w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_818.png 818w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_877.png 877w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_908.png 908w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_942.png 942w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_955.png 955w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_956.png 956w"
-            src="./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_956.png"
-            alt="Manager of Time Project Thumbnail Image">
-          </picture>
+          <img class="thumb-img" src="./images/projects/thumbnail/m-alga-thumb.jpg" alt="Project Thumbnail">
 
           <!-- Content -->
           <div class="work-caption-cont">
@@ -334,57 +186,7 @@
         <div class="work-card col-span-4 m-col-start-7 m-col-span-5">
           <h3 class="hidden">Work 4</h3>
           <!-- Thumbnail -->
-          <picture class="thumb-img">
-            <source
-            media="(max-width: 767px)"
-            sizes="(max-width: 651px) 100vw, 651px"
-            srcset="
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_320.png 320w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_378.png 378w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_429.png 429w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_480.png 480w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_521.png 521w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_564.png 564w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_601.png 601w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_635.png 635w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_651.png 651w">
-            <source
-            media="(min-width: 768px) and (max-width: 991px)"
-            sizes="(max-width: 991px) 70vw, 694px"
-            srcset="
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_4_3,c_fill,g_auto__c_scale,w_538.png 538w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_4_3,c_fill,g_auto__c_scale,w_595.png 595w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_4_3,c_fill,g_auto__c_scale,w_639.png 639w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_4_3,c_fill,g_auto__c_scale,w_685.png 685w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_4_3,c_fill,g_auto__c_scale,w_694.png 694w">
-            <source
-            media="(min-width: 992px) and (max-width: 1199px)"
-            sizes="(max-width: 1200px) 60vw, 720px"
-            srcset="
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_16_9,c_fill,g_auto__c_scale,w_596.png 596w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_16_9,c_fill,g_auto__c_scale,w_667.png 667w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_16_9,c_fill,g_auto__c_scale,w_716.png 716w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_16_9,c_fill,g_auto__c_scale,w_720.png 720w">
-            <img
-            sizes="(max-width: 2390px) 40vw, 956px"
-            srcset="
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_480.png 480w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_537.png 537w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_589.png 589w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_639.png 639w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_683.png 683w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_721.png 721w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_760.png 760w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_808.png 808w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_818.png 818w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_877.png 877w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_908.png 908w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_942.png 942w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_955.png 955w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_956.png 956w"
-            src="./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_956.png"
-            alt="Manager of Time Project Thumbnail Image">
-          </picture>
+          <img class="thumb-img" src="./images/projects/thumbnail/m-sqzit-thumb.jpg" alt="Project Thumbnail">
 
           <!-- Content -->
           <div class="work-caption-cont">
@@ -412,59 +214,7 @@
         <div class="work-card col-span-4 m-col-start-2 m-col-span-5">
           <h3 class="hidden">Work 5</h3>
           <!-- Thumbnail -->
-          <picture class="thumb-img">
-            <source
-            media="(max-width: 767px)"
-            sizes="(max-width: 651px) 100vw, 651px"
-            srcset="
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_320.png 320w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_375.png 375w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_422.png 422w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_468.png 468w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_503.png 503w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_542.png 542w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_579.png 579w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_609.png 609w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_649.png 649w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_1_1,c_fill,g_auto__c_scale,w_651.png 651w">
-            <source
-            media="(min-width: 768px) and (max-width: 991px)"
-            sizes="(max-width: 991px) 70vw, 694px"
-            srcset="
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_4_3,c_fill,g_auto__c_scale,w_538.png 538w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_4_3,c_fill,g_auto__c_scale,w_585.png 585w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_4_3,c_fill,g_auto__c_scale,w_635.png 635w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_4_3,c_fill,g_auto__c_scale,w_683.png 683w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_4_3,c_fill,g_auto__c_scale,w_694.png 694w">
-            <source
-            media="(min-width: 992px) and (max-width: 1199px)"
-            sizes="(max-width: 1200px) 60vw, 720px"
-            srcset="
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_16_9,c_fill,g_auto__c_scale,w_596.png 596w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_16_9,c_fill,g_auto__c_scale,w_659.png 659w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_16_9,c_fill,g_auto__c_scale,w_702.png 702w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_ar_16_9,c_fill,g_auto__c_scale,w_720.png 720w">
-            <img
-            sizes="(max-width: 2390px) 40vw, 956px"
-            srcset="
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_480.png 480w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_531.png 531w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_578.png 578w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_621.png 621w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_667.png 667w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_707.png 707w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_741.png 741w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_778.png 778w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_814.png 814w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_844.png 844w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_846.png 846w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_907.png 907w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_939.png 939w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_955.png 955w,
-            ./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_956.png 956w"
-            src="./images/projects/thumbnail/eternity/eternity-thumbnail_btujxt_c_scale,w_956.png"
-            alt="Eternity Project Thumbnail">
-            </picture>
+          <img class="thumb-img" src="./images/projects/thumbnail/m-eternity-thumb.jpg" alt="Project Thumbnail">
 
           <!-- Content -->
           <div class="work-caption-cont">
@@ -492,57 +242,7 @@
         <div class="work-card col-span-4 m-col-start-7 m-col-span-5">
           <h3 class="hidden">Work 6</h3>
           <!-- Thumbnail -->
-          <picture class="thumb-img">
-            <source
-            media="(max-width: 767px)"
-            sizes="(max-width: 651px) 100vw, 651px"
-            srcset="
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_320.png 320w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_378.png 378w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_429.png 429w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_480.png 480w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_521.png 521w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_564.png 564w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_601.png 601w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_635.png 635w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_1_1,c_fill,g_auto__c_scale,w_651.png 651w">
-            <source
-            media="(min-width: 768px) and (max-width: 991px)"
-            sizes="(max-width: 991px) 70vw, 694px"
-            srcset="
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_4_3,c_fill,g_auto__c_scale,w_538.png 538w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_4_3,c_fill,g_auto__c_scale,w_595.png 595w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_4_3,c_fill,g_auto__c_scale,w_639.png 639w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_4_3,c_fill,g_auto__c_scale,w_685.png 685w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_4_3,c_fill,g_auto__c_scale,w_694.png 694w">
-            <source
-            media="(min-width: 992px) and (max-width: 1199px)"
-            sizes="(max-width: 1200px) 60vw, 720px"
-            srcset="
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_16_9,c_fill,g_auto__c_scale,w_596.png 596w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_16_9,c_fill,g_auto__c_scale,w_667.png 667w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_16_9,c_fill,g_auto__c_scale,w_716.png 716w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_ar_16_9,c_fill,g_auto__c_scale,w_720.png 720w">
-            <img
-            sizes="(max-width: 2390px) 40vw, 956px"
-            srcset="
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_480.png 480w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_537.png 537w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_589.png 589w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_639.png 639w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_683.png 683w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_721.png 721w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_760.png 760w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_808.png 808w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_818.png 818w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_877.png 877w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_908.png 908w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_942.png 942w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_955.png 955w,
-            ./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_956.png 956w"
-            src="./images/projects/thumbnail/mot/mot-thumbnail_izm53s_c_scale,w_956.png"
-            alt="Manager of Time Project Thumbnail Image">
-          </picture>
+          <img class="thumb-img" src="./images/projects/thumbnail/m-mot-thumb.jpg" alt="Project Thumbnail">
 
           <!-- Content -->
           <div class="work-caption-cont">
@@ -568,7 +268,7 @@
       </section>
 
       <!-- Other Works Section -->
-      <section id="other-works" class="grid-con">
+      <section id="other-works" class="hidden">
         <h2 class="header-section-2 col-span-4 m-col-span-12">Other Works You Might Find Interesting</h2>
 
         <!-- Work Archives -->
@@ -683,12 +383,16 @@
       <!-- CONTACT -->
       <section id="contact" class="grid-con">
         <h2 class="hidden">Contact Me</h2>
+        <!-- Decoration -->
+        <div class="footer-decor col-span-full">
+          <img id="swirl-decor" src="./images/decorations/swirl-1.png" alt="Decorative Image">
+        </div>
 
         <!-- Email Button -->
-        <a href="mailto:kith.richrd@gmail.com?subject=Hey%20Fella&body=I'm%20..." class="col-span-4 m-col-start-4 m-col-span-6 email-contact-btn">kith.richrd@gmail.com <img src="./images/icons/mail-icon-black.svg" alt="Mail Icon"></a>
+        <a href="mailto:kith.richrd@gmail.com?subject=Hey%20Fella&body=I'm%20..." class="col-span-4 m-col-start-4 m-col-span-6 email-contact-btn">Drop Me Your Problems <img src="./images/icons/mail-icon-black.svg" alt="Mail Icon"></a>
 
         <!-- Copy -->
-        <p class="col-span-4 m-col-span-12 l-col-span-12 contact-headline">Let's Make Ideas
+        <p class="col-span-4 m-col-span-12 l-col-span-12 contact-headline">Let's Make It
           <span>FEASIBLE</span>
           <span>TOGETHER</span>
         </p>
@@ -707,6 +411,10 @@
               <a href="https://github.com/keiith001" target="_blank"><img src="./images/socmed/github-icon.svg" alt="github logo"></a>
             </li>
           </ul>
+        </div>
+
+        <div class="footer-decor col-span-full">
+          <img id="twist-decor" src="./images/decorations/twist-1.png" alt="Decorative Image">
         </div>
 
         <div class="line-seperator col-span-4 m-col-span-12"></div>

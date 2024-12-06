@@ -117,6 +117,35 @@
         }
     }
 
+    #page-nav {
+        #works-menu {
+            transition: .1s all ease-in-out;
+        }
+
+        #works-menu:hover {
+            font-weight: 800;
+            color: v.$k-blue;
+        }
+
+        #about-menu {
+            transition: .1s all ease-in-out;
+        }
+
+        #about-menu:hover {
+            font-weight: 800;
+            color: v.$k-magenta;
+        }
+
+        #playground-menu {
+            transition: .1s all ease-in-out;
+        }
+
+        #playground-menu:hover {
+            font-weight: 800;
+            color: v.$k-orange;
+        }
+    }
+
     .off-screen {
         z-index: 10;
         background: none;
