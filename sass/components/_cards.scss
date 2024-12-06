@@ -1,10 +1,24 @@
 @use "../abstracts/variables" as v;
 
+// Carousel
+.carousel-cont {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 767px;
+
+    #works-catalogue {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+}
+
 // Cards
 .work-card {
-    flex-direction: column;
-    justify-content: start;
-    margin: 15px auto;
+    flex: 0 0 100%;
+    margin-top: 10px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
 
     p {
         display: flex;
@@ -71,20 +85,24 @@
     }
 }
 
-.workpiece-cont {
-    .thumb-img {
-        img {
-            border-radius: 20px;
-        }
-    }
-}
-
 // Tablet Size {
 @media screen and (min-width: 768px) {
+    .carousel-cont {
+        position: relative;
+        overflow: hidden;
+        max-width: 767px;
+        
+        #works-catalogue {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr); 
+            grid-column-gap: 20px;
+        }
+    }
+
     .work-card {
         flex-direction: column;
         justify-content: start;
-        margin: 15px auto;
+        width: 100%;
     
         p {
             display: flex;
