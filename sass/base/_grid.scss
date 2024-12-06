@@ -150,6 +150,14 @@ ul {
     padding-right: 16px;
   }
 
+  .m-grid-con {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-column-gap: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .m-col-auto {
     grid-column: auto;
   }

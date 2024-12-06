@@ -78,6 +78,76 @@ fadeIn.forEach((fade) => {
     );
 });
 
+// Works Carousel
+// =====================
+
+// Variables
+const workCarousel = document.querySelector('#works-catalogue');
+const workCard = document.querySelectorAll('.work-card');
+
+// Initial Variables Properties
+let currentIndex = 0;
+const totalCards = workCard.length;
+const cardWidth = workCard[0].offsetWidth + 20;
+const autoCarouselTime = 3;
+
+// Function
+function moveCarousel(index) {
+  if (index < 0) {
+    currentIndex = totalCards - 1;
+  } else if (index >= totalCards) {
+    currentIndex = 0;
+  } else {
+    currentIndex = index;
+  }
+
+  // Smooth Transition with GSAP
+  gsap.to(workCarousel, {
+    duration: 1,
+    x: -currentIndex * cardWidth,
+    ease: "power2.inOut",
+  });
+}
+
+// Touch Sliding Behaviour
+let touchStartX = 0;
+let touchEndX = 0;
+
+// Sliding Function
+function touchStartPoint(e) {
+  touchStartX = e.touches[0].clientX;
+}
+
+function touchEndPoint(e) {
+  touchEndX = e.changedTouches[0].clientX;
+
+  if (touchStartX - touchEndX > 50) {
+    // Swipe Left
+    moveCarousel(currentIndex + 1);
+  } else if (touchEndX - touchStartX > 50) {
+    // Swipe Right
+    moveCarousel(currentIndex - 1);
+  }
+}
+
+// Auto Carousel
+function autoCarousel() {
+  if (window.innerWidth <= 767) {
+    setInterval(() => {
+      moveCarousel(currentIndex + 1);
+    }, autoCarouselTime * 1000);
+  } else {
+    console.log("Auto Carousel turned off in Tablet and Desktop Size.");
+  }
+}
+// Call Function
+moveCarousel(currentIndex);
+autoCarousel();
+
+// Event Listener
+workCarousel.addEventListener('touchstart', touchStartPoint);
+workCarousel.addEventListener('touchend', touchEndPoint);
+
 
 
 
