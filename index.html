@@ -71,7 +71,7 @@
 
         <!-- Decoration -->
         <div id="hero-decor" class="decor m-col-start-7 m-col-span-4">
-          <img src="./images/decorations/k-logo-3d.png" alt="K Logo 3D Image">
+          <img id="k-logo-3d" class="floating-anim" src="./images/decorations/k-logo-3d.png" alt="K Logo 3D Image">
         </div>
 
         <!-- Skill Showcase -->
@@ -101,10 +101,10 @@
 
       <!-- Featured Works (Dynamic)-->
       <section id="feat-work-sect" class="grid-con">
-        <h2 class="header-section col-span-4 m-col-start-2 m-col-span-11">Featured Works</h2>
+        <h2 class="header-section fade-in col-span-4 m-col-start-2 m-col-span-11">Featured Works</h2>
 
         <!-- Work #1 -->
-        <div class="work-card col-span-4 m-col-start-2 m-col-end-12">
+        <div class="work-card fade-in col-span-4 m-col-start-2 m-col-end-12">
           <h3 class="hidden">Work 1</h3>
           <!-- Thumbnail -->
           <picture class="thumb-img">
@@ -149,7 +149,7 @@
         </div>
 
         <!-- Work #2 -->
-        <div class="work-card col-span-4 m-col-start-2 m-col-end-12">
+        <div class="work-card fade-in col-span-4 m-col-start-2 m-col-end-12">
           <h3 class="hidden">Work 2</h3>
           <!-- Thumbnail -->
           <picture class="thumb-img">
@@ -194,7 +194,7 @@
         </div>
 
         <!-- Work #3 -->
-        <div class="work-card col-span-4 m-col-start-2 m-col-end-12">
+        <div class="work-card fade-in col-span-4 m-col-start-2 m-col-end-12">
           <h3 class="hidden">Work 3</h3>
           <!-- Thumbnail -->
           <picture class="thumb-img">
@@ -245,10 +245,10 @@
 
       <!-- THIS SECTION WILL BE ON EVERY PAGE -->
       <!-- CONTACT -->
-      <section id="contact" class="grid-con">
+      <section id="contact" class="grid-con fade-in">
         <h2 class="hidden">Contact Me</h2>
         <!-- Decoration -->
-        <div class="footer-decor col-span-full">
+        <div class="floating-anim footer-decor col-span-full">
           <img id="swirl-decor" src="./images/decorations/swirl-1.png" alt="Decorative Image">
         </div>
 
@@ -277,7 +277,7 @@
           </ul>
         </div>
 
-        <div class="footer-decor col-span-full">
+        <div class="floating-anim footer-decor col-span-full">
           <img id="twist-decor" src="./images/decorations/twist-1.png" alt="Decorative Image">
         </div>
 
@@ -334,6 +334,12 @@
     </footer>
 
     <!-- JS -->
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+
+    <!-- Main JS -->
     <script src="./js/main.js"></script>
+
   </body>
 </html>
