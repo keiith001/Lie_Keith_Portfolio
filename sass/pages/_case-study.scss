@@ -2,24 +2,28 @@
 
 #cs-banner {
     margin-top: 90px;
-    background: url(/images/projects/thumbnail/l-sqzit-thumbnail.png);
-    background-color: v.$grey;
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
 
     .works-logo {
-        margin-top: 80px;
+        margin-top: 140px;
         margin-bottom: 40px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 50px;
-        height: 50px;
+
+        img {
+            width: 150px;
+        }
+
+        a {
+            margin-top: 20px;
+            font-size: v.$m-bodycopy;
+            width: 200px;
+        }
     }
 
     .tools-cont {
@@ -65,10 +69,18 @@
                 margin-top: 10px;
             }
         }
+    }
+}
 
-        img {
-            border-radius: 20px;
-        }
+.cs-cont {
+    img {
+        margin-bottom: 10px;
+    }
+}
+
+.cs-content {
+    p {
+        margin-bottom: 10px;
     }
 }
 
@@ -82,8 +94,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 80px;
-            height: 80px;
         }
 
         .tools-cont {
@@ -142,10 +152,6 @@
                     width: 25%;
                 }
             }
-    
-            img {
-                border-radius: 20px;
-            }
         }
     }
 
@@ -155,6 +161,10 @@
         flex-direction: row;
         justify-content: space-between;
 
+        img {
+            margin-bottom: 15px;
+        }
+
         .cs-header-cont {
             width: 20%;
             padding-right: 20px;
@@ -163,9 +173,9 @@
         .cs-content {
             margin-top: 5px;
             width: 80%;
-    
-            img {
-                border-radius: 20px;
+
+            p {
+                margin-bottom: 15px;
             }
         }
     }
@@ -181,8 +191,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 80px;
-            height: 80px;
+
+            img {
+                width: 200px;
+            }
         }
 
         .tools-cont {
@@ -262,10 +274,6 @@
         .cs-content {
             margin-top: 5px;
             width: 80%;
-    
-            img {
-                border-radius: 20px;
-            }
         }
     }
 }

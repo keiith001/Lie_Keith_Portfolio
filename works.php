@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+  <?php
+  //connect to the running database server and the specific database
+  $connect = new mysqli('localhost','root','root','keith_portfolio');
+  include('includes/connect.php');
+
+
+  //create a query to run in SQL
+  $query = 'SELECT works.id AS works, thumbnail, m_thumb, banner, overview, type, title, team, year, link, cs_no, problem, how_might, target_audience, brainstorm, key_findings, design_decisions, site_map, flow_chart, wireframe, highfid, prototyping, feedback, key_takeaways, title FROM works WHERE works.id IN (3, 4, 5, 1) ORDER BY FIELD(works.id, 3, 4, 5, 1)';
+
+
+  //run the query to get back the content
+  $results = mysqli_query($connect,$query);
+
+
+  // print_r($results);
+
+  ?>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -101,19 +118,26 @@
 
         <!-- Cards Container -->
         <div id="works-catalogue" class="col-span-4 m-col-span-12">
+
+          <?php
+
+          while($row = mysqli_fetch_array($results)) {
+          
+          echo '
+
           <!-- Work #1 -->
           <div class="work-card fade-in m-col-span-6">
             <h3 class="hidden">Work 1</h3>
             <!-- Thumbnail -->
-            <img class="thumb-img" src="./images/projects/thumbnail/m-hk-thumb.jpg" alt="Project Thumbnail">
+            <img class="thumb-img" src="./images/projects/thumbnail/'.$row['m_thumb'].'.jpg" alt="Project Thumbnail">
 
             <!-- Content -->
             <div class="work-caption-cont">
-              <p class="case-no">Case Study 02</p>
-              <p class="year">2023</p>
+              <p class="case-no">Case Study '.$row['cs_no'].'</p>
+              <p class="year">'.$row['year'].'</p>
             </div>
 
-            <p class="thumb-work-title">Eternity</p>
+            <p class="thumb-work-title">'.$row['title'].'</p>
 
             <div class="wc-footer">
               <!-- Tags -->
@@ -125,149 +149,11 @@
               </ul>
 
               <!-- Learn More Button -->
-              <a href="case-study.html" class="secondary-btn">Learn More <span><img src="./images/icons/arrow-right.svg" alt="Arrow Icon"></span></a>
+              <a href="case-study.php?id='.$row['works'].'" class="secondary-btn">Learn More <span><img src="./images/icons/arrow-right.svg" alt="Arrow Icon"></span></a>
             </div>
-          </div>
-
-          <!-- Work #2 -->
-          <div class="work-card fade-in m-col-span-6">
-            <h3 class="hidden">Work 2</h3>
-            <!-- Thumbnail -->
-            <img class="thumb-img" src="./images/projects/thumbnail/m-beeliv-thumb.jpg" alt="Project Thumbnail">
-
-            <!-- Content -->
-            <div class="work-caption-cont">
-              <p class="case-no">Case Study 02</p>
-              <p class="year">2023</p>
-            </div>
-
-            <p class="thumb-work-title">Eternity</p>
-
-            <div class="wc-footer">
-              <!-- Tags -->
-              <ul class="tag-lists">
-                <li>UX/UI</li>
-                <li>3D</li>
-                <li>Graphic</li>
-                <li>Website</li>
-              </ul>
-
-              <!-- Learn More Button -->
-              <a href="case-study.html" class="secondary-btn">Learn More <span><img src="./images/icons/arrow-right.svg" alt="Arrow Icon"></span></a>
-            </div>
-          </div>
-
-          <!-- Work #3 -->
-          <div class="work-card fade-in m-col-span-6">
-            <h3 class="hidden">Work 3</h3>
-            <!-- Thumbnail -->
-            <img class="thumb-img" src="./images/projects/thumbnail/m-alga-thumb.jpg" alt="Project Thumbnail">
-
-            <!-- Content -->
-            <div class="work-caption-cont">
-              <p class="case-no">Case Study 03</p>
-              <p class="year">2022</p>
-            </div>
-
-            <p class="thumb-work-title">Manager of Time</p>
-
-            <div class="wc-footer">
-              <!-- Tags -->
-              <ul class="tag-lists">
-                <li>UX/UI</li>
-                <li>3D</li>
-                <li>Graphic</li>
-                <li>Website</li>
-              </ul>
-
-              <!-- Learn More Button -->
-              <a href="case-study.html" class="secondary-btn">Learn More <span><img src="./images/icons/arrow-right.svg" alt="Arrow Icon"></span></a>
-            </div>
-          </div>
-
-          <!-- Work #4 -->
-          <div class="work-card fade-in m-col-span-6">
-            <h3 class="hidden">Work 4</h3>
-            <!-- Thumbnail -->
-            <img class="thumb-img" src="./images/projects/thumbnail/m-sqzit-thumb.jpg" alt="Project Thumbnail">
-
-            <!-- Content -->
-            <div class="work-caption-cont">
-              <p class="case-no">Case Study 03</p>
-              <p class="year">2022</p>
-            </div>
-
-            <p class="thumb-work-title">Manager of Time</p>
-
-            <div class="wc-footer">
-              <!-- Tags -->
-              <ul class="tag-lists">
-                <li>UX/UI</li>
-                <li>3D</li>
-                <li>Graphic</li>
-                <li>Website</li>
-              </ul>
-
-              <!-- Learn More Button -->
-              <a href="case-study.html" class="secondary-btn">Learn More <span><img src="./images/icons/arrow-right.svg" alt="Arrow Icon"></span></a>
-            </div>
-          </div>
-
-          <!-- Work #5 -->
-          <div class="work-card fade-in m-col-span-6">
-            <h3 class="hidden">Work 5</h3>
-            <!-- Thumbnail -->
-            <img class="thumb-img" src="./images/projects/thumbnail/m-eternity-thumb.jpg" alt="Project Thumbnail">
-
-            <!-- Content -->
-            <div class="work-caption-cont">
-              <p class="case-no">Case Study 02</p>
-              <p class="year">2023</p>
-            </div>
-
-            <p class="thumb-work-title">Eternity</p>
-
-            <div class="wc-footer">
-              <!-- Tags -->
-              <ul class="tag-lists">
-                <li>UX/UI</li>
-                <li>3D</li>
-                <li>Graphic</li>
-                <li>Website</li>
-              </ul>
-
-              <!-- Learn More Button -->
-              <a href="case-study.html" class="secondary-btn">Learn More <span><img src="./images/icons/arrow-right.svg" alt="Arrow Icon"></span></a>
-            </div>
-          </div>
-
-          <!-- Work #6 -->
-          <div class="work-card fade-in m-col-span-6">
-            <h3 class="hidden">Work 6</h3>
-            <!-- Thumbnail -->
-            <img class="thumb-img" src="./images/projects/thumbnail/m-mot-thumb.jpg" alt="Project Thumbnail">
-
-            <!-- Content -->
-            <div class="work-caption-cont">
-              <p class="case-no">Case Study 03</p>
-              <p class="year">2022</p>
-            </div>
-
-            <p class="thumb-work-title">Manager of Time</p>
-
-            <div class="wc-footer">
-              <!-- Tags -->
-              <ul class="tag-lists">
-                <li>UX/UI</li>
-                <li>3D</li>
-                <li>Graphic</li>
-                <li>Website</li>
-              </ul>
-
-              <!-- Learn More Button -->
-              <a href="case-study.html" class="secondary-btn">Learn More <span><img src="./images/icons/arrow-right.svg" alt="Arrow Icon"></span></a>
-            </div>
-          </div>
+          </div>';
+          
+          } ?>
         </div>
       </div>
 
