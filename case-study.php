@@ -140,8 +140,8 @@
               </div>
 
               <div class="wi-caption">
-                <p class="case-no">Time</p>
-                <p class="year">Website</p>
+                <p class="case-no">Year</p>
+                <p class="year"><?php echo $row['year'];?></p>
               </div>
             </div>
 
